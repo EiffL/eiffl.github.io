@@ -1,12 +1,13 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - EiffL
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - DifferentiableUniverseInitiative/jax_cosmo
+  - DifferentiableUniverseInitiative/jaxDecomp
+  - DifferentiableUniverseInitiative/flowpm
+  - DifferentiableUniverseInitiative/DHOD
+  - CosmoStat/autometacal
+  - CosmoStat/jax-lensing
+  - McWilliamsCenter/deep_galaxy_models
+  - EiffL/cosmos_extrapolation
+  - CosmoStat/Glimpse

@@ -1,0 +1,29 @@
+"2022arXiv221109958L":
+  preview: "https://raw.githubusercontent.com/eelregit/pmwd/master/assets/logo.svg"
+
+"2022arXiv221001813H":
+  website: "https://ml4astro.github.io/dawes-review/"
+  selected: "true"
+  preview: "https://ml4astro.github.io/dawes-review/Figure1.png"
+
+"2022arXiv221103852H":
+  code: "https://github.com/DifferentiableUniverseInitiative/DHOD"
+  selected: "true"
+
+"2022arXiv220705636Z":
+  selected: "true"
+  slides: https://slideslive.com/38985996/neural-posterior-estimation-with-differentiable-simulators?ref=speaker-24378
+
+"2022MNRAS.516.2406J":
+  blog: "https://blog.ml.cmu.edu/2022/08/19/galaxies-on-graph-neural-networks/"
+
+"2022NatRP...4..573G":
+  selected: "true"
+
+"2022arXiv220105561R":
+  selected: "true"
+  code: "https://github.com/CosmoStat/jax-lensing"
+  preview: "https://github.com/EiffL/talks/raw/master/assets/cropped.gif"
+
+"2021A&C....3700505M":
+  blog: https://blog.tensorflow.org/2020/03/simulating-universe-in-tensorflow.html

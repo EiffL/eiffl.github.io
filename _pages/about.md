@@ -6,7 +6,7 @@ subtitle: Cosmologist / Astrostatistician @ CNRS, member of the <a href='https:/
 
 profile:
   align: right
-  image: prof_pic3.jpg
+  image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p><small><i class="fab fa-github"></i> <a href="https://github.com/EiffL"> @EiffL</a></small></p>
@@ -17,4 +17,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a CNRS researcher in the CosmoStat Laboratory at CEA Paris-Saclay. I work at the intersection between Deep Learning, Statistical Modeling, and Observational Cosmology.
+I am a CNRS researcher working at the intersection between Deep Learning, Statistical Modeling, and Observational Cosmology.

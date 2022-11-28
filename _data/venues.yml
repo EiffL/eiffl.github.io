@@ -1,6 +1,39 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"A&A":
+  url: https://www.aanda.org/
+  color: "#31B5C1"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"MNRAS":
+  url: https://academic.oup.com/mnras
+  color: "#937CB9"
+
+"Nat. Rev. Phys":
+  color: "#2F2F2F"
+  url: https://www.nature.com/natrevphys/
+
+"OJAp":
+  color: "#133C55"
+  url: https://astro.theoj.org/
+
+"Astron. Comput.":
+  color: "#E87224"
+  url: https://www.sciencedirect.com/journal/astronomy-and-computing
+
+"PASJ":
+  color: "#003F79"
+  url: https://academic.oup.com/pasj
+
+"ApJ":
+  color: "#3C5492"
+  url: https://iopscience.iop.org/journal/0004-637X
+
+"ApJS":
+  color: "#939BB2"
+  url: https://iopscience.iop.org/journal/0067-0049
+
+"JCAP":
+  color: "#0B6F9E"
+  url: https://jcap.sissa.it/jcap/
+
+"AJ":
+  color: "#0073A0"
+  url: https://iopscience.iop.org/journal/1538-3881
