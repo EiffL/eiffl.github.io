@@ -1,97 +1,106 @@
-- title: General Information
-  type: map
+- title: Positions
+  type: time_table
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+    - title: Permanent CNRS Researcher (CRCN)
+      institution: CosmoStat Laboratory, UMR AIM/CEA Paris-Saclay/CNRS/Université Paris-Saclay/Université Paris Cité, Gif-sur-Yvette, France
+      year: 2020-now
+
+    - title: BCCP Computational Data Science Fellow & FODA Fellow
+      institution: University of California, Berkeley, CA, USA
+      year: 2018-2020
+      description:
+        - "Advisor: Prof. Uroš Seljak"
+
+    - title: Postdoctoral reasearcher
+      institution: McWilliams Center for Cosmology, Department of Physics, Carnegie Mellon University, Pittsburgh, PA, USA
+      year: 2015-2018
+      description:
+        - "Advisor: Prof. Rachel Mandelbaum"
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: "Ph.D. in Astrophysics: Sparse Reconstruction of Dark Matter Mass Maps from Weak Gravitational Lensing"
+      institution: Université Paris-Saclay, CEA Paris-Saclay, Gif-sur-Yvette, France
+      year: 2012-2015
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - "Advisor: Jean-Luc Starck"
 
-- title: Experience
+    - title: Master 2 Research - Fundamental Physics
+      institution: Université Paris 11, Orsay, France
+      year: 2011-2012
+      description:
+        - Specialization Nuclei Particles Astrophysics Cosmology (NPAC)
+
+    - title: Master 2 Research - Fundamental and Applied Mathematics
+      institution: Université Paul Verlaine, Metz, France
+      year: 2010-2011
+      description:
+        - Joint diploma with Supélec degree
+
+    - title: Supélec Engineer Diploma
+      institution: Supélec, Campus Gif-sur-Yvette, and Metz (3rd year), France
+      year: 2008-2011
+      description:
+        - Electrical Engineering degree from one of France's top Grandes Ecoles
+
+- title: Selected Roles in Scientific Collaborations
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
+    - title: Co-lead of the Bayesian Pipelines Topical Team of the LSST Dark Energy Sciency Collaboration
+      year: 2022-now
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Hack/Sprint co-coordinator for the LSST Dark Energy Sciency Collaboration
+      year: 2022-now
+      description: Organization of DESC hack days and hack weeks.
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
+    - title: Chair of the LSST Dark Energy Science Collaboration Council
+      year: 2021
+      description: Chaired over the ratification of the LSST DESC Speakers Bureau, the LSST DESC Software Policy, and significant amendments to the LSST DESC Publication and Membership Policies.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+    - title: Co-convener of the Weak Lensing Working Group of the LSST Dark Energy Science Collaboration
+      year: 2020-2022
 
-- title: Open Source Projects
+# - title: Open Source Projects
+#   type: time_table
+#   contents:
+#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+#       year: 2015-now
+#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+
+- title: Selected Workshops and Meetings Organization
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - year: 2022
       items:
-        - Description 1.
-        - Description 2.
+        - <a href="https://ml4astro.github.io/icml2022">Machine Learning for Astrophysics Workshop</a> at ICML 2022 (Co-Chair)
 
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - LSST DESC Hack/Sprint Week in University of Michigan, Ann Arbor (Co-Coordinator)
+
+        - <a href="https://astrodeep.net/workshop2022/">Paris Workshop on Bayesian Deep Learning for Cosmology and Time Domain Astrophysics</a> (Scientific Organizing Committee)
+
+    - year: 2021
+      items:
+        - <a href="https://mlclub.net">MLClub debate series on Machine Learning and Astrophysics</a> (co-organizer)
+
+    - year: 2019
+      items:
+        - <a href="https://lfitaskforce.github.io/FlatironMeeting/">Likelihood-Free Inference Workshop</a>, Flatiron Institute, NYC (co-organizer)
+
+        - <a href="https://bids.github.io/MLStatsForum">Machine Learning and Science Forum</a>, Berkeley (co-organizer)
+# - title: Academic Interests
+#   type: nested_list
+#   contents:
+#     - title: Topic 1.
+#       items:
+#         - Description 1.
+#         - Description 2.
+#     - title: Topic 2.
+#       items:
+#         - Description 1.
+#         - Description 2.
+
+# - title: Other Interests
+#   type: list
+#   contents:
+#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
