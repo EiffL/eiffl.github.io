@@ -1,7 +1,7 @@
 "2022arXiv221109958L":
   preview: "https://raw.githubusercontent.com/eelregit/pmwd/master/assets/logo.svg"
 
-"2022arXiv221001813H":
+"2023PASA...40....1H":
   website: "https://ml4astro.github.io/dawes-review/"
   selected: "true"
   preview: "https://ml4astro.github.io/dawes-review/Figure1.png"
@@ -10,7 +10,7 @@
   code: "https://github.com/DifferentiableUniverseInitiative/DHOD"
   selected: "true"
 
-"2022arXiv220705636Z":
+"2022mla..confE..52Z":
   selected: "true"
   slides: https://slideslive.com/38985996/neural-posterior-estimation-with-differentiable-simulators?ref=speaker-24378
 
@@ -20,7 +20,7 @@
 "2022NatRP...4..573G":
   selected: "true"
 
-"2022arXiv220105561R":
+"2023A&A...672A..51R":
   selected: "true"
   code: "https://github.com/CosmoStat/jax-lensing"
   preview: "https://github.com/EiffL/talks/raw/master/assets/cropped.gif"
