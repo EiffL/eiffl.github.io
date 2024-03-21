@@ -7,7 +7,7 @@
 
     - title: BCCP Computational Data Science Fellow & FODA Fellow
       institution: University of California, Berkeley, CA, USA
-      year: 2018-2020
+      year: 2018-2019
       description:
         - "Advisor: Prof. Uroš Seljak"
 
@@ -47,11 +47,14 @@
 - title: Selected Roles in Scientific Collaborations
   type: time_table
   contents:
-    - title: Co-lead of the Bayesian Pipelines Topical Team of the LSST Dark Energy Sciency Collaboration
+    - title: Co-chair of the LSST Informatics and Statistics Science Collaboration
       year: 2022-now
+  
+    - title: Co-lead of the Bayesian Pipelines Topical Team of the LSST Dark Energy Science Collaboration
+      year: 2022-2024
 
-    - title: Hack/Sprint co-coordinator for the LSST Dark Energy Sciency Collaboration
-      year: 2022-now
+    - title: Hack/Sprint co-coordinator for the LSST Dark Energy Science Collaboration
+      year: 2022-2023
       description: Organization of DESC hack days and hack weeks.
 
     - title: Chair of the LSST Dark Energy Science Collaboration Council
