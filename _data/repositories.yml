@@ -2,6 +2,7 @@ github_users:
   - EiffL
 
 github_repos:
+  - MultimodalUniverse/MultimodalUniverse
   - DifferentiableUniverseInitiative/jax_cosmo
   - DifferentiableUniverseInitiative/jaxDecomp
   - DifferentiableUniverseInitiative/flowpm
