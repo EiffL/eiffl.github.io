@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Cosmologist / Astrostatistician @ CNRS, currently on leave at the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York City, member of the <a href='https://www.cosmostat.org/'>CosmoStat Laboratory</a> near Paris.
+subtitle: Cosmologist / Astrostatistician @ CNRS, guest researcher at the <a href="https://www.simonsfoundation.org/flatiron/">Flatiron Institute</a> in New York City, member of the <a href='https://www.cosmostat.org/'>CosmoStat Laboratory</a> near Paris.
 
 profile:
   align: right
