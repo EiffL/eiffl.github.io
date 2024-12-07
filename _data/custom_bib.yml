@@ -1,3 +1,8 @@
+"2024arXiv241202527T":
+  selected: "true"
+  preview: "https://raw.githubusercontent.com/MultimodalUniverse/MultimodalUniverse/refs/heads/main/assets/multimodal_universe.png"
+  blog: "https://www.simonsfoundation.org/2024/12/02/new-datasets-will-train-ai-models-to-think-like-scientists/"
+
 "2023arXiv230704967D":
   preview: "/assets/img/publication_preview/SSL.png"
   selected: "true"
@@ -12,7 +17,6 @@
 
 "2022arXiv221103852H":
   code: "https://github.com/DifferentiableUniverseInitiative/DHOD"
-  selected: "true"
 
 "2022mla..confE..52Z":
   selected: "true"
