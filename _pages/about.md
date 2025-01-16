@@ -17,9 +17,9 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-**I am a CNRS researcher working at the intersection between Deep Learning, Statistical Modeling, and Observational Cosmology**. I am particularly interested in combining tools and methodologies from the field of Machine Learning (automatic differentiation, deep generative models, score-based high-dimensional inference) with physical modeling for the analysis of Stage IV Cosmological Surveys.
+**I am a CNRS researcher working at the intersection between Deep Learning, Statistical Modeling, and Observational Cosmology**. I am particularly interested in combining tools and methodologies from the field of Machine Learning (automatic differentiation, generative AI) with physical modeling for the analysis of Cosmological Surveys.
 
-I am currently co-Chair of the [LSST Informatics & Statistics Science Collaboration](https://issc.science.lsst.org) (LSST ISSC) and actively involved in the [LSST Dark Energy Science Collaboration](https://lsstdesc.org/) (LSST DESC).
+I am currently co-Chair of the [LSST Informatics & Statistics Science Collaboration](https://issc.science.lsst.org) (LSST ISSC) and involved in the [LSST Dark Energy Science Collaboration](https://lsstdesc.org/) (LSST DESC).
 
 <p>Before my CNRS position, I was a postdoctoral fellow at the <a class="reference external" href="http://bccp.berkeley.edu/">Berkeley Center for Cosmological
 Physics</a> (BCCP) and with the <a class="reference external" href="https://foda.berkeley.edu/">Foundation of Data Analysis</a> (FODA)
