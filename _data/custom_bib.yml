@@ -5,7 +5,6 @@
 
 "2023arXiv230704967D":
   preview: "/assets/img/publication_preview/SSL.png"
-  selected: "true"
 
 "2022arXiv221109958L":
   preview: "https://raw.githubusercontent.com/eelregit/pmwd/master/assets/logo.svg"
@@ -19,7 +18,6 @@
   code: "https://github.com/DifferentiableUniverseInitiative/DHOD"
 
 "2022mla..confE..52Z":
-  selected: "true"
   slides: https://slideslive.com/38985996/neural-posterior-estimation-with-differentiable-simulators?ref=speaker-24378
 
 "2022MNRAS.516.2406J":
