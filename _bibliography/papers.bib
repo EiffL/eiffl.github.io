@@ -1,3 +1,70 @@
+@article{2025A&A...693A..46K,
+ abbr = {A&A},
+ abstract = {{Context. The number density of galaxy clusters across mass and redshift
+has been established as a powerful cosmological probe, yielding
+important information on the matter components of the Universe.
+Cosmological analyses with galaxy clusters traditionally employ
+scaling relations, which are empirical relationships between
+cluster masses and their observable properties. However, many
+challenges arise from this approach as the scaling relations are
+highly scattered, maybe ill-calibrated, depend on the cosmology,
+and contain many nuisance parameters with low physical
+significance. Aims. For this paper, we used a simulation-based
+inference method utilizing artificial neural networks to
+optimally extract cosmological information from a shallow X-ray
+survey, solely using count rates, hardness ratios, and
+redshifts. This procedure enabled us to conduct likelihood-free
+inference of cosmological parameters {\ensuremath{\Omega}}$_{m}$
+and {\ensuremath{\sigma}}$_{8}$. Methods. To achieve this, we
+analytically generated several datasets of 70 000 cluster
+samples with totally random combinations of cosmological and
+scaling relation parameters. Each sample in our simulation is
+represented by its galaxy cluster distribution in a count rate
+(CR) and hardness ratio (HR) space in multiple redshift bins. We
+trained convolutional neural networks (CNNs) to retrieve the
+cosmological parameters from these distributions. We then used
+neural density estimation (NDE) neural networks to predict the
+posterior probability distribution of
+{\ensuremath{\Omega}}$_{m}$ and {\ensuremath{\sigma}}$_{8}$
+given an input galaxy cluster sample. Results. Using the survey
+area as a proxy for the number of clusters detected for fixed
+cosmological and astrophysical parameters, and hence of the
+Poissonian noise, we analyze various survey sizes. The
+1{\ensuremath{\sigma}} errors of our density estimator on one of
+the target testing simulations are 1000 deg$^{2}$, 15.2\% for
+{\ensuremath{\Omega}}$_{m}$ and 10.0\% for
+{\ensuremath{\sigma}}$_{8}$; and 10 000 deg$^{2}$, 9.6\% for
+{\ensuremath{\Omega}}$_{m}$ and 5.6\% for
+{\ensuremath{\sigma}}$_{8}$. We also compare our results with a
+traditional Fisher analysis and explore the effect of an
+additional constraint on the redshift distribution of the
+simulated samples. Conclusions. We demonstrate, as a proof of
+concept, that it is possible to calculate cosmological
+predictions of {\ensuremath{\Omega}}$_{m}$ and
+{\ensuremath{\sigma}}$_{8}$ from a galaxy cluster population
+without explicitly computing cluster masses and even the scaling
+relation coefficients, thus avoiding potential biases resulting
+from such a procedure.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025A&A...693A..46K},
+ altmetric = {167174382},
+ archiveprefix = {arXiv},
+ arxiv = {2409.06001},
+ author = {{Kosiba}, M. and {Cerardi}, N. and {Pierre}, M. and {Lanusse}, F. and {Garrel}, C. and {Werner}, N. and {Shalak}, M.},
+ bibtex_show = {true},
+ doi = {10.1051/0004-6361/202450499},
+ eid = {A46},
+ eprint = {2409.06001},
+ journal = {Astronomy and Astrophysics},
+ keywords = {galaxies: clusters: general, cosmological parameters, cosmology: observations, Astrophysics - Cosmology and Nongalactic Astrophysics},
+ month = {January},
+ pages = {A46},
+ primaryclass = {astro-ph.CO},
+ title = {{The cosmological analysis of X-ray cluster surveys: VI. Inference based on analytically simulated observable diagrams}},
+ volume = {693},
+ year = {2025}
+}
+
 @article{2024arXiv241202527T,
  abstract = {{We present the MULTIMODAL UNIVERSE, a large-scale multimodal dataset of
 scientific astronomical data, compiled specifically to
@@ -16,11 +83,11 @@ is available at
 https://github.com/MultimodalUniverse/MultimodalUniverse}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv241202527T},
- altmetric = {171506755},
  archiveprefix = {arXiv},
  arxiv = {2412.02527},
  author = {{The Multimodal Universe Collaboration} and {Audenaert}, Jeroen and {Bowles}, Micah and {Boyd}, Benjamin M. and {Chemaly}, David and {Cherinka}, Brian and {Ciuc{\u{a}}}, Ioana and {Cranmer}, Miles and {Do}, Aaron and {Grayling}, Matthew and {Hayes}, Erin E. and {Hehir}, Tom and {Ho}, Shirley and {Huertas-Company}, Marc and {Iyer}, Kartheik G. and {Jablonska}, Maja and {Lanusse}, Francois and {Leung}, Henry W. and {Mandel}, Kaisey and {Mart{\'\i}nez-Galarza}, Juan Rafael and {Melchior}, Peter and {Meyer}, Lucas and {Parker}, Liam H. and {Qu}, Helen and {Shen}, Jeff and {Smith}, Michael J. and {Stone}, Connor and {Walmsley}, Mike and {Wu}, John F.},
  bibtex_show = {true},
+ blog = {https://www.simonsfoundation.org/2024/12/02/new-datasets-will-train-ai-models-to-think-like-scientists/},
  doi = {10.48550/arXiv.2412.02527},
  eid = {arXiv:2412.02527},
  eprint = {2412.02527},
@@ -28,8 +95,42 @@ https://github.com/MultimodalUniverse/MultimodalUniverse}},
  keywords = {Astrophysics - Instrumentation and Methods for Astrophysics, Astrophysics - Astrophysics of Galaxies, Astrophysics - Solar and Stellar Astrophysics},
  month = {December},
  pages = {arXiv:2412.02527},
+ preview = {https://raw.githubusercontent.com/MultimodalUniverse/MultimodalUniverse/refs/heads/main/assets/multimodal_universe.png},
  primaryclass = {astro-ph.IM},
+ selected = {true},
  title = {{The Multimodal Universe: Enabling Large-Scale Machine Learning with 100TB of Astronomical Scientific Data}},
+ year = {2024}
+}
+
+@article{2024RNAAS...8..301A,
+ abstract = {{We present the Multimodal Universe, a new framework collating over 100
+TB of multimodal astronomical data for its first release,
+spanning images, spectra, time series, tabular and hyper-
+spectral data. This unified collection enables a wide variety of
+machine learning (ML) applications and research across
+astronomical domains. The dataset brings together observations
+from multiple surveys, facilities, and wavelength regimes,
+providing standardized access to diverse data types. By
+providing uniform access to this diverse data, the Multimodal
+Universe aims to accelerate the development of ML methods for
+observational astronomy that can work across the large
+differences in astronomical datasets. The framework is actively
+supported and is designed to be extended whilst enforcing
+minimal self consistent conventions making contributing data as
+simple and practical as possible.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2024RNAAS...8..301A},
+ author = {{Angeloudi}, Eirini and {Audenaert}, Jeroen and {Bowles}, Micah and {Boyd}, Benjamin M. and {Chemaly}, David and {Cherinka}, Brian and {Ciuc{\u{a}}}, Ioana and {Cranmer}, Miles and {Do}, Aaron and {Grayling}, Matthew and {Hayes}, Erin E. and {Hehir}, Tom and {Ho}, Shirley and {Huertas-Company}, Marc and {Iyer}, Kartheik G. and {Jablonska}, Maja and {Lanusse}, Francois and {Leung}, Henry W. and {Mandel}, Kaisey and {Mart{\'\i}nez-Galarza}, Juan Rafael and {Melchior}, Peter and {Meyer}, Lucas and {Parker}, Liam H. and {Qu}, Helen and {Shen}, Jeff and {Smith}, Michael J. and {Walmsley}, Mike and {Wu}, John F. and {Multimodal Universe Collaboration}},
+ bibtex_show = {true},
+ doi = {10.3847/2515-5172/ad9a63},
+ eid = {301},
+ journal = {Research Notes of the American Astronomical Society},
+ keywords = {Astronomy data acquisition, Astronomy databases, 1860, 83},
+ month = {December},
+ number = {12},
+ pages = {301},
+ title = {{The Multimodal Universe: 100 TB of Machine Learning Ready Astronomical Data}},
+ volume = {8},
  year = {2024}
 }
 
@@ -163,57 +264,6 @@ available at
  pages = {arXiv:2409.11401},
  primaryclass = {astro-ph.CO},
  title = {{Teaching dark matter simulations to speak the halo language}},
- year = {2024}
-}
-
-@article{2024arXiv240906001K,
- abstract = {{The number density of galaxy clusters across mass and redshift has been
-established as a powerful cosmological probe. Cosmological
-analyses with galaxy clusters traditionally employ scaling
-relations. However, many challenges arise from this approach as
-the scaling relations are highly scattered, may be ill-
-calibrated, depend on the cosmology, and contain many nuisance
-parameters with low physical significance. In this paper, we use
-a simulation-based inference method utilizing artificial neural
-networks to optimally extract cosmological information from a
-shallow X-ray survey of galaxy clusters, solely using count
-rates (CR), hardness ratios (HR), and redshifts. This procedure
-enables us to conduct likelihood-free inference of cosmological
-parameters $\Omega_{\mathrm{m}}$ and $\sigma_8$. We analytically
-generate simulations of galaxy cluster distribution in a CR, HR
-space in multiple redshift bins based on totally random
-combinations of cosmological and scaling relation parameters. We
-train Convolutional Neural Networks (CNNs) to retrieve the
-cosmological parameters from these simulations. We then use
-neural density estimation (NDE) neural networks to predict the
-posterior probability distribution of $\Omega_{\mathrm{m}}$ and
-$\sigma_8$ given an input galaxy cluster sample. The 1 $\sigma$
-errors of our density estimator on one of the target testing
-simulations are 1000 deg$^2$: 15.2\% for $\Omega_{\mathrm{m}}$
-and 10.0\% for $\sigma_8$; 10000 deg$^2$: 9.6\% for
-$\Omega_{\mathrm{m}}$ and 5.6\% for $\sigma_8$. We also compare
-our results with Fisher analysis. We demonstrate, as a proof of
-concept, that it is possible to calculate cosmological
-predictions of $\Omega_{\mathrm{m}}$ and $\sigma_8$ from a
-galaxy cluster population without explicitly computing cluster
-masses and even, the scaling relation coefficients, thus
-avoiding potential biases resulting from such a procedure.
-[abridged]}},
- adsnote = {Provided by the SAO/NASA Astrophysics Data System},
- adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv240906001K},
- archiveprefix = {arXiv},
- arxiv = {2409.06001},
- author = {{Kosiba}, M. and {Cerardi}, N. and {Pierre}, M. and {Lanusse}, F. and {Garrel}, C. and {Werner}, N. and {Shalak}, M.},
- bibtex_show = {true},
- doi = {10.48550/arXiv.2409.06001},
- eid = {arXiv:2409.06001},
- eprint = {2409.06001},
- journal = {arXiv e-prints},
- keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics},
- month = {September},
- pages = {arXiv:2409.06001},
- primaryclass = {astro-ph.CO},
- title = {{The cosmological analysis of X-ray cluster surveys: VI. Inference based on analytically simulated observable diagrams}},
  year = {2024}
 }
 
@@ -628,25 +678,27 @@ amplitude of the intrinsic alignment signal, A$_{IA}$.}},
 
 @article{2023arXiv231002994M,
  abstract = {{We introduce multiple physics pretraining (MPP), an autoregressive task-
-agnostic pretraining approach for physical surrogate modeling.
-MPP involves training large surrogate models to predict the
-dynamics of multiple heterogeneous physical systems
-simultaneously by learning features that are broadly useful
-across diverse physical tasks. In order to learn effectively in
-this setting, we introduce a shared embedding and normalization
-strategy that projects the fields of multiple systems into a
-single shared embedding space. We validate the efficacy of our
-approach on both pretraining and downstream tasks over a broad
-fluid mechanics-oriented benchmark. We show that a single MPP-
-pretrained transformer is able to match or outperform task-
-specific baselines on all pretraining sub-tasks without the need
-for finetuning. For downstream tasks, we demonstrate that
-finetuning MPP-trained models results in more accurate
-predictions across multiple time-steps on new physics compared
-to training from scratch or finetuning pretrained video
-foundation models. We open-source our code and model weights
-trained at multiple scales for reproducibility and community
-experimentation.}},
+agnostic pretraining approach for physical surrogate modeling of
+spatiotemporal systems with transformers. In MPP, rather than
+training one model on a specific physical system, we train a
+backbone model to predict the dynamics of multiple heterogeneous
+physical systems simultaneously in order to learn features that
+are broadly useful across systems and facilitate transfer. In
+order to learn effectively in this setting, we introduce a
+shared embedding and normalization strategy that projects the
+fields of multiple systems into a shared embedding space. We
+validate the efficacy of our approach on both pretraining and
+downstream tasks over a broad fluid mechanics-oriented
+benchmark. We show that a single MPP-pretrained transformer is
+able to match or outperform task-specific baselines on all
+pretraining sub-tasks without the need for finetuning. For
+downstream tasks, we demonstrate that finetuning MPP-trained
+models results in more accurate predictions across multiple
+time-steps on systems with previously unseen physical components
+or higher dimensional systems compared to training from scratch
+or finetuning pretrained video foundation models. We open-source
+our code and model weights trained at multiple scales for
+reproducibility.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv231002994M},
  archiveprefix = {arXiv},
@@ -666,20 +718,20 @@ experimentation.}},
 }
 
 @article{2023arXiv231002989G,
- abstract = {{Large Language Models have not yet been broadly adapted for the analysis
-of scientific datasets due in part to the unique difficulties of
-tokenizing numbers. We propose xVal, a numerical encoding scheme
-that represents any real number using just a single token. xVal
-represents a given real number by scaling a dedicated embedding
-vector by the number value. Combined with a modified number-
-inference approach, this strategy renders the model end-to-end
-continuous when considered as a map from the numbers of the
-input string to those of the output string. This leads to an
-inductive bias that is generally more suitable for applications
-in scientific domains. We empirically evaluate our proposal on a
-number of synthetic and real-world datasets. Compared with
-existing number encoding schemes, we find that xVal is more
-token-efficient and demonstrates improved generalization.}},
+ abstract = {{Due in part to their discontinuous and discrete default encodings for
+numbers, Large Language Models (LLMs) have not yet been commonly
+used to process numerically-dense scientific datasets. Rendering
+datasets as text, however, could help aggregate diverse and
+multi-modal scientific data into a single training corpus,
+thereby potentially facilitating the development of foundation
+models for science. In this work, we introduce xVal, a strategy
+for continuously tokenizing numbers within language models that
+results in a more appropriate inductive bias for scientific
+applications. By training specially-modified language models
+from scratch on a variety of scientific datasets formatted as
+text, we find that xVal generally outperforms other common
+numerical tokenization strategies on metrics including out-of-
+distribution generalization and computational efficiency.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv231002989G},
  archiveprefix = {arXiv},
@@ -694,7 +746,7 @@ token-efficient and demonstrates improved generalization.}},
  month = {October},
  pages = {arXiv:2310.02989},
  primaryclass = {stat.ML},
- title = {{xVal: A Continuous Number Encoding for Large Language Models}},
+ title = {{xVal: A Continuous Numerical Tokenization for Scientific Language Models}},
  year = {2023}
 }
 
