@@ -1,3 +1,909 @@
+@article{2026arXiv260313227Q,
+ abstract = {{Machine learning approaches to spatiotemporal physical systems have
+primarily focused on next-frame prediction, with the goal of
+learning an accurate emulator for the system's evolution in
+time. However, these emulators are computationally expensive to
+train and are subject to performance pitfalls, such as
+compounding errors during autoregressive rollout. In this work,
+we take a different perspective and look at scientific tasks
+further downstream of predicting the next frame, such as
+estimation of a system's governing physical parameters. Accuracy
+on these tasks offers a uniquely quantifiable glimpse into the
+physical relevance of the representations of these models. We
+evaluate the effectiveness of general-purpose self-supervised
+methods in learning physics-grounded representations that are
+useful for downstream scientific tasks. Surprisingly, we find
+that not all methods designed for physical modeling outperform
+generic self-supervised learning methods on these tasks, and
+methods that learn in the latent space (e.g., joint embedding
+predictive architectures, or JEPAs) outperform those optimizing
+pixel-level prediction objectives. Code is available at
+https://github.com/helenqu/physical-representation-learning.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2026arXiv260313227Q},
+ archiveprefix = {arXiv},
+ arxiv = {2603.13227},
+ author = {{Qu}, Helen and {Morel}, Rudy and {McCabe}, Michael and {Bietti}, Alberto and {Lanusse}, Fran{\c{c}}ois and {Ho}, Shirley and {LeCun}, Yann},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2603.13227},
+ eid = {arXiv:2603.13227},
+ eprint = {2603.13227},
+ journal = {arXiv e-prints},
+ keywords = {Machine Learning, Computer Vision and Pattern Recognition},
+ month = {March},
+ pages = {arXiv:2603.13227},
+ primaryclass = {stat.ML},
+ title = {{Representation Learning for Spatiotemporal Physical Systems}},
+ year = {2026}
+}
+
+@article{2026ApJS..282...69M,
+ abbr = {ApJS},
+ abstract = {{The observing strategy (OS) of an astronomical survey influences the
+degree to which its resulting data can be used to accomplish any
+science goal, necessitating upcoming programs, including those
+on the Rubin and Roman telescopes, to solicit metrics in order
+to optimally choose an OS balancing the costs and benefits to
+diverse science cases. The requirement that such metrics must be
+fast to compute often forces them to bake in analysis choices
+that may not hold for real data. Furthermore, such metrics do
+not typically share units, impairing objectivity in combining
+them in an ultimate decision. We propose a metric for OS
+optimization that is based on the potentially recoverable mutual
+information about a physical parameter of interest from a sample
+of data under the constraints of a realistic OS and present a
+tractable estimation of a variational lower bound of this mutual
+information implemented in a public code using conditional
+normalizing flows. We demonstrate the calculation and
+interpretation of our information-theoretic metric in the
+context of photometric redshifts, a data product essential to
+virtually all extragalactic science applications of the Legacy
+Survey of Space and Time, using mock galaxy catalogs, showing
+how it can discriminate between observing strategies that
+preclude robust redshift constraints and those that preserve
+more redshift information, without specifying an estimator. As
+our versatile metric reduces the reliance on analysis choices
+and is interpretable between science goals, we recommend its use
+to assess the impact of OS in any science application in which
+photometry may be forward modeled. ✎}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2026ApJS..282...69M},
+ author = {{Malz}, Alex I. and {Lanusse}, Francois and {Crenshaw}, John Franklin and {Scott}, Bryan and {Graham}, Melissa L.},
+ bibtex_show = {true},
+ doi = {10.3847/1538-4365/ad7d07},
+ eid = {69},
+ journal = {Astrophysical Journal, Supplement},
+ keywords = {Astrostatistics strategies, Astrostatistics tools, Astrostatistics techniques, Redshift surveys, Sky surveys, Surveys, 1885, 1887, 1886, 1378, 1464, 1671},
+ month = {February},
+ number = {2},
+ pages = {69},
+ title = {{An Information-based Metric for Observing Strategy Optimization, Demonstrated in the Context of Photometric Redshifts for LSST}},
+ volume = {282},
+ year = {2026}
+}
+
+@inproceedings{2026AAS...24724904L,
+ abstract = {{Deep Learning has seen a recent shift in paradigm, from training
+specialized models on dedicated datasets, so-called Foundation
+Models, trained in a self-supervised manner on vast amounts of
+data and then adapted to solve specific tasks with state-of-the-
+art performance. This new paradigm has been exceptionally
+successful not only for large language models (LLMs) but in
+other domains such as vision models. However applications of
+this new approach in scientific application domains are still
+very scarce, for reasons ranging from the need for new
+architectures to the (surprising) lack of availability of
+suitable large scale datasets. In this talk, I will summarize
+our main takeaways and lessons learned from building AION-1, the
+first large-scale multimodal Foundation Model trained at the
+billion-parameters scale, on an unprecedentedly large and
+diverse dataset (200M astronomical objects) covering multiple
+survey and data modalitlies (DES, HSC, DESI, SDSS, Gaia). I will
+in particular highlight the new requirements in data
+infrastructure, software libraries and stack, methodological
+expertise, and access to large scale compute necessary to build
+such models.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2026AAS...24724904L},
+ author = {{Lanusse}, Francois},
+ bibtex_show = {true},
+ booktitle = {American Astronomical Society Meeting Abstracts},
+ eid = {249.04},
+ month = {February},
+ pages = {249.04},
+ series = {American Astronomical Society Meeting Abstracts},
+ title = {{Building Large Multimodal Foundation Models for Survey Astronomy}},
+ volume = {247},
+ year = {2026}
+}
+
+@article{2026arXiv260114235L,
+ abstract = {{The Vera C. Rubin Observatory's Legacy Survey of Space and Time (LSST)
+will produce unprecedented volumes of heterogeneous astronomical
+data (images, catalogs, and alerts) that challenge traditional
+analysis pipelines. The LSST Dark Energy Science Collaboration
+(DESC) aims to derive robust constraints on dark energy and dark
+matter from these data, requiring methods that are statistically
+powerful, scalable, and operationally reliable. Artificial
+intelligence and machine learning (AI/ML) are already embedded
+across DESC science workflows, from photometric redshifts and
+transient classification to weak lensing inference and
+cosmological simulations. Yet their utility for precision
+cosmology hinges on trustworthy uncertainty quantification,
+robustness to covariate shift and model misspecification, and
+reproducible integration within scientific pipelines. This white
+paper surveys the current landscape of AI/ML across DESC's
+primary cosmological probes and cross-cutting analyses,
+revealing that the same core methodologies and fundamental
+challenges recur across disparate science cases. Since progress
+on these cross-cutting challenges would benefit multiple probes
+simultaneously, we identify key methodological research
+priorities, including Bayesian inference at scale, physics-
+informed methods, validation frameworks, and active learning for
+discovery. With an eye on emerging techniques, we also explore
+the potential of the latest foundation model methodologies and
+LLM-driven agentic AI systems to reshape DESC workflows,
+provided their deployment is coupled with rigorous evaluation
+and governance. Finally, we discuss critical software,
+computing, data infrastructure, and human capital requirements
+for the successful deployment of these new methodologies, and
+consider associated risks and opportunities for broader
+coordination with external actors.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2026arXiv260114235L},
+ archiveprefix = {arXiv},
+ arxiv = {2601.14235},
+ author = {{LSST Dark Energy Science Collaboration} and {Aubourg}, Eric and {Avestruz}, Camille and {Becker}, Matthew R. and {Biswas}, Biswajit and {Biswas}, Rahul and {Bolliet}, Boris and {Bolton}, Adam S. and {Bom}, Clecio R. and {Bonnet-Guerrini}, Rapha{\"e}l and {Boucaud}, Alexandre and {Campagne}, Jean-Eric and {Chang}, Chihway and {{\'C}iprijanovi{\'c}}, Aleksandra and {Cohen-Tanugi}, Johann and {Coughlin}, Michael W. and {Crenshaw}, John Franklin and {Cuevas-Tello}, Juan C. and {de Vicente}, Juan and {Digel}, Seth W. and {Dillmann}, Steven and {de Le{\'o}n Dominguez Romero}, Mariano Javier and {Drlica-Wagner}, Alex and {Erickson}, Sydney and {Gagliano}, Alexander T. and {Georgiou}, Christos and {Ghosh}, Aritra and {Grayling}, Matthew and {Grishin}, Kirill A. and {Heavens}, Alan and {House}, Lindsay R. and {Ishak}, Mustapha and {Kabalan}, Wassim and {Kannawadi}, Arun and {Lanusse}, Fran{\c{c}}ois and {Leonard}, C. Danielle and {L{\'e}get}, Pierre-Fran{\c{c}}ois and {Lochner}, Michelle and {Mao}, Yao-Yuan and {Melchior}, Peter and {Merz}, Grant and {Millon}, Martin and {M{\"o}ller}, Anais and {Narayan}, Gautham and {Omori}, Yuuki and {Peiris}, Hiranya and {Perreault-Levasseur}, Laurence and {Plazas Malag{\'o}n}, Andr{\'e}s A. and {Ramachandra}, Nesar and {Remy}, Benjamin and {Roucelle}, C{\'e}cile and {Ruiz-Zapatero}, Jaime and {Schuldt}, Stefan and {Sevilla-Noarbe}, Ignacio and {Shah}, Ved G. and {Starkenburg}, Tjitske and {Thorp}, Stephen and {Toribio San Cipriano}, Laura and {Tr{\"o}ster}, Tilman and {Trotta}, Roberto and {Venkatraman}, Padma and {Wasserman}, Amanda and {White}, Tim and {Zeghal}, Justine and {Zhang}, Tianqing and {Zhang}, Yuanyuan},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2601.14235},
+ eid = {arXiv:2601.14235},
+ eprint = {2601.14235},
+ journal = {arXiv e-prints},
+ keywords = {Instrumentation and Methods for Astrophysics, Cosmology and Nongalactic Astrophysics, Artificial Intelligence, Machine Learning},
+ month = {January},
+ pages = {arXiv:2601.14235},
+ primaryclass = {astro-ph.IM},
+ title = {{Opportunities in AI/ML for the Rubin LSST Dark Energy Science Collaboration}},
+ year = {2026}
+}
+
+@article{2025arXiv251211982K,
+ abstract = {{Finding scientifically interesting phenomena through slow, manual
+labeling campaigns severely limits our ability to explore the
+billions of galaxy images produced by telescopes. In this work,
+we develop a pipeline to create a semantic search engine from
+completely unlabeled image data. Our method leverages Vision-
+Language Models (VLMs) to generate descriptions for galaxy
+images, then contrastively aligns a pre-trained multimodal
+astronomy foundation model with these embedded descriptions to
+produce searchable embeddings at scale. We find that current
+VLMs provide descriptions that are sufficiently informative to
+train a semantic search model that outperforms direct image
+similarity search. Our model, AION-Search, achieves state-of-
+the-art zero-shot performance on finding rare phenomena despite
+training on randomly selected images with no deliberate curation
+for rare cases. Furthermore, we introduce a VLM-based re-ranking
+method that nearly doubles the recall for our most challenging
+targets in the top-100 results. For the first time, AION-Search
+enables flexible semantic search scalable to 140 million galaxy
+images, enabling discovery from previously infeasible searches.
+More broadly, our work provides an approach for making large,
+unlabeled scientific image archives semantically searchable,
+expanding data exploration capabilities in fields from Earth
+observation to microscopy. The code, data, and app are publicly
+available at https://github.com/NolanKoblischke/AION-Search}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv251211982K},
+ archiveprefix = {arXiv},
+ arxiv = {2512.11982},
+ author = {{Koblischke}, Nolan and {Parker}, Liam and {Lanusse}, Francois and {Espejo Morales}, Irina and {Bovy}, Jo and {Ho}, Shirley},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2512.11982},
+ eid = {arXiv:2512.11982},
+ eprint = {2512.11982},
+ journal = {arXiv e-prints},
+ keywords = {Instrumentation and Methods for Astrophysics, Artificial Intelligence, Computer Vision and Pattern Recognition, Machine Learning},
+ month = {December},
+ pages = {arXiv:2512.11982},
+ primaryclass = {astro-ph.IM},
+ title = {{Semantic search for 100M+ galaxy images using AI-generated captions}},
+ year = {2025}
+}
+
+@article{2025JCAP...12..039S,
+ abbr = {JCAP},
+ abstract = {{Field-level inference has emerged as a promising framework to fully
+harness the cosmological information encoded in next-generation
+galaxy surveys. It involves performing Bayesian inference to
+jointly estimate the cosmological parameters and the initial
+conditions of the cosmic field, directly from the observed
+galaxy density field. Yet, the scalability and efficiency of
+sampling algorithms for field-level inference of large-scale
+surveys remain unclear. To address this, we introduce a
+standardized benchmark using a fast and differentiable simulator
+for the galaxy density field based on JaxPM. We evaluate a range
+of sampling methods, including standard Hamiltonian Monte Carlo
+(HMC), No-U-Turn Sampler (NUTS) without and within a Gibbs
+scheme, and both adjusted and unadjusted microcanonical samplers
+(MAMS and MCLMC). These methods are compared based on their
+efficiency, in particular the number of model evaluations
+required per effective posterior sample. Our findings emphasize
+the importance of carefully preconditioning latent variables and
+demonstrate the significant advantage of (unadjusted) MCLMC for
+scaling to {\ensuremath{\geq}} {}10$^{6}$-dimensional problems.
+We find that MCLMC outperforms adjusted samplers by over an
+order-of-magnitude, with a mild scaling with the dimension of
+our inference problem. This benchmark, along with the associated
+publicly available code, is intended to serve as a basis for the
+evaluation of future field-level sampling strategies. The code
+is openly available at https://github.com/hsimonfroy/benchmark-
+field-level.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025JCAP...12..039S},
+ archiveprefix = {arXiv},
+ arxiv = {2504.20130},
+ author = {{Simon}, Hugo and {Lanusse}, Fran{\c{c}}ois and {de Mattia}, Arnaud},
+ bibtex_show = {true},
+ doi = {10.1088/1475-7516/2025/12/039},
+ eid = {039},
+ eprint = {2504.20130},
+ journal = {Journal of Cosmology and Astroparticle Physics},
+ keywords = {cosmological parameters from LSS, cosmological simulations, Statistical sampling techniques, redshift surveys, Cosmology and Nongalactic Astrophysics, Instrumentation and Methods for Astrophysics, Computation},
+ month = {December},
+ number = {12},
+ pages = {039},
+ primaryclass = {astro-ph.CO},
+ title = {{Benchmarking field-level cosmological inference from galaxy redshift surveys}},
+ volume = {2025},
+ year = {2025}
+}
+
+@article{2025arXiv251119390M,
+ abstract = {{Conditional diffusion models provide a natural framework for
+probabilistic prediction of dynamical systems and have been
+successfully applied to fluid dynamics and weather prediction.
+However, in many settings, the available information at a given
+time represents only a small fraction of what is needed to
+predict future states, either due to measurement uncertainty or
+because only a small fraction of the state can be observed. This
+is true for example in solar physics, where we can observe the
+Sun's surface and atmosphere, but its evolution is driven by
+internal processes for which we lack direct measurements. In
+this paper, we tackle the probabilistic prediction of partially
+observable, long-memory dynamical systems, with applications to
+solar dynamics and the evolution of active regions. We show that
+standard inference schemes, such as autoregressive rollouts,
+fail to capture long-range dependencies in the data, largely
+because they do not integrate past information effectively. To
+overcome this, we propose a multiscale inference scheme for
+diffusion models, tailored to physical processes. Our method
+generates trajectories that are temporally fine-grained near the
+present and coarser as we move farther away, which enables
+capturing long-range temporal dependencies without increasing
+computational cost. When integrated into a diffusion model, we
+show that our inference scheme significantly reduces the bias of
+the predicted distributions and improves rollout stability.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv251119390M},
+ archiveprefix = {arXiv},
+ arxiv = {2511.19390},
+ author = {{Morel}, Rudy and {Ramunno}, Francesco Pio and {Shen}, Jeff and {Bietti}, Alberto and {Cho}, Kyunghyun and {Cranmer}, Miles and {Golkar}, Siavash and {Gugnin}, Olexandr and {Krawezik}, Geraud and {Marwah}, Tanya and {McCabe}, Michael and {Meyer}, Lucas and {Mukhopadhyay}, Payel and {Ohana}, Ruben and {Parker}, Liam and {Qu}, Helen and {Rozet}, Fran{\c{c}}ois and {Leka}, K.~D. and {Lanusse}, Fran{\c{c}}ois and {Fouhey}, David and {Ho}, Shirley},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2511.19390},
+ eid = {arXiv:2511.19390},
+ eprint = {2511.19390},
+ journal = {arXiv e-prints},
+ keywords = {Machine Learning, Solar and Stellar Astrophysics, Artificial Intelligence},
+ month = {November},
+ pages = {arXiv:2511.19390},
+ primaryclass = {stat.ML},
+ title = {{Predicting partially observable dynamical systems via diffusion models with a multiscale inference scheme}},
+ year = {2025}
+}
+
+@article{2025arXiv251115684M,
+ abstract = {{Foundation models have transformed machine learning for language and
+vision, but achieving comparable impact in physical simulation
+remains a challenge. Data heterogeneity and unstable long-term
+dynamics inhibit learning from sufficiently diverse dynamics,
+while varying resolutions and dimensionalities challenge
+efficient training on modern hardware. Through empirical and
+theoretical analysis, we incorporate new approaches to mitigate
+these obstacles, including a harmonic-analysis-based
+stabilization method, load-balanced distributed 2D and 3D
+training strategies, and compute-adaptive tokenization. Using
+these tools, we develop Walrus, a transformer-based foundation
+model developed primarily for fluid-like continuum dynamics.
+Walrus is pretrained on nineteen diverse scenarios spanning
+astrophysics, geoscience, rheology, plasma physics, acoustics,
+and classical fluids. Experiments show that Walrus outperforms
+prior foundation models on both short and long term prediction
+horizons on downstream tasks and across the breadth of
+pretraining data, while ablation studies confirm the value of
+our contributions to forecast stability, training throughput,
+and transfer performance over conventional approaches. Code and
+weights are released for community use.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv251115684M},
+ archiveprefix = {arXiv},
+ arxiv = {2511.15684},
+ author = {{McCabe}, Michael and {Mukhopadhyay}, Payel and {Marwah}, Tanya and {Regaldo-Saint Blancard}, Bruno and {Rozet}, Francois and {Diaconu}, Cristiana and {Meyer}, Lucas and {Wong}, Kaze W.~K. and {Sotoudeh}, Hadi and {Bietti}, Alberto and {Espejo}, Irina and {Fear}, Rio and {Golkar}, Siavash and {Hehir}, Tom and {Hirashima}, Keiya and {Krawezik}, Geraud and {Lanusse}, Francois and {Morel}, Rudy and {Ohana}, Ruben and {Parker}, Liam and {Pettee}, Mariel and {Shen}, Jeff and {Cho}, Kyunghyun and {Cranmer}, Miles and {Ho}, Shirley},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2511.15684},
+ eid = {arXiv:2511.15684},
+ eprint = {2511.15684},
+ journal = {arXiv e-prints},
+ keywords = {Machine Learning, Artificial Intelligence, Computational Engineering, Finance, and Science},
+ month = {November},
+ pages = {arXiv:2511.15684},
+ primaryclass = {stat.ML},
+ title = {{Walrus: A Cross-Domain Foundation Model for Continuum Dynamics}},
+ year = {2025}
+}
+
+@article{2025MNRAS.543.2255D,
+ abbr = {MNRAS},
+ abstract = {{We use a combination of self-supervised machine learning and visual
+classification to identify tidal features in a sample of 34 331
+galaxies with stellar masses  and redshift , drawn from the
+Hyper Suprime-Cam Subaru Strategic Programme optical imaging
+survey. We assemble the largest sample of 1646 galaxies with
+confirmed tidal features, finding a tidal feature fraction . We
+analyse how the incidences of tidal features and the various
+classes of tidal features vary with host galaxy stellar mass,
+photometric redshift, and colour, as well as halo mass. We find
+an increasing relationship between tidal feature fraction and
+host galaxy stellar mass, and a decreasing relationship with
+redshift. We find more tidal features occurring in group
+environments with  than in the field or in denser, cluster
+environments. We also find that the central galaxies of the most
+massive [log/M)  14.1] groups and clusters exhibit higher rates
+of tidal features than the satellite galaxies. We find good
+agreement between the trends we observe and the results obtained
+from purely visual or other automated methods, confirming the
+validity of our methodology and that using machine learning can
+drastically reduce the workload of visual classifiers, having
+needed to visually classify less than 30 per cent of our sample.
+Such methods will be instrumental in classifying the millions of
+suitable galaxies to be observed by large upcoming imaging
+surveys such as the Vera C. Rubin Observatory's Legacy Survey of
+Space and Time.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025MNRAS.543.2255D},
+ archiveprefix = {arXiv},
+ arxiv = {2509.18274},
+ author = {{Desmons}, A. and {Brough}, S. and {Lanusse}, F. and {Canepa}, L. and {Khalid}, A.},
+ bibtex_show = {true},
+ doi = {10.1093/mnras/staf1617},
+ eprint = {2509.18274},
+ journal = {Monthly Notices of the Royal Astronomical Society},
+ keywords = {methods: data analysis, galaxies: evolution, galaxies: interactions, Astrophysics of Galaxies},
+ month = {November},
+ number = {3},
+ pages = {2255-2274},
+ primaryclass = {astro-ph.GA},
+ title = {{Analysing the prevalence of tidal features in HSC-SSP using self-supervised representation learning}},
+ volume = {543},
+ year = {2025}
+}
+
+@article{2025arXiv251026593T,
+ abstract = {{Cosmological field-level inference requires differentiable forward
+models that solve the challenging dynamics of gas and dark
+matter under hydrodynamics and gravity. We propose a hybrid
+approach where gravitational forces are computed using a
+differentiable particle-mesh solver, while the hydrodynamics are
+parametrized by a neural network that maps local quantities to
+an effective pressure field. We demonstrate that our method
+improves upon alternative approaches, such as an Enthalpy
+Gradient Descent baseline, both at the field and summary-
+statistic level. The approach is furthermore highly data
+efficient, with a single reference simulation of cosmological
+structure formation being sufficient to constrain the neural
+pressure model. This opens the door for future applications
+where the model is fit directly to observational data, rather
+than a training set of simulations.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv251026593T},
+ archiveprefix = {arXiv},
+ arxiv = {2510.26593},
+ author = {{Thomsen}, Arne and {Tr{\"o}ster}, Tilman and {Lanusse}, Fran{\c{c}}ois},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2510.26593},
+ eid = {arXiv:2510.26593},
+ eprint = {2510.26593},
+ journal = {arXiv e-prints},
+ keywords = {Cosmology and Nongalactic Astrophysics, Machine Learning},
+ month = {October},
+ pages = {arXiv:2510.26593},
+ primaryclass = {astro-ph.CO},
+ title = {{Hybrid Physical-Neural Simulator for Fast Cosmological Hydrodynamics}},
+ year = {2025}
+}
+
+@article{2025arXiv251024631Z,
+ abstract = {{We propose a new field-level emulator that bridges two simulators using
+unpaired simulation datasets. Our method leverages a flow-based
+approach to learn the likelihood transport from one simulator to
+the other. Since multiple transport maps exist, we employ
+Conditional Optimal Transport Flow Matching (COT-FM) to ensure
+that the transformation minimally distorts the underlying
+structure of the data. We demonstrate the effectiveness of this
+approach by bridging weak lensing simulators: a Lagrangian
+Perturbation Theory (LPT) to a N-body Particle-Mesh (PM). We
+demonstrate that our emulator captures the full correction
+between the simulators by showing that it enables full-field
+inference to accurately recover the true posterior, validating
+its accuracy beyond traditional summary statistics.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv251024631Z},
+ archiveprefix = {arXiv},
+ arxiv = {2510.24631},
+ author = {{Zeghal}, Justine and {Remy}, Benjamin and {Hezaveh}, Yashar and {Lanusse}, Francois and {Perreault Levasseur}, Laurence},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2510.24631},
+ eid = {arXiv:2510.24631},
+ eprint = {2510.24631},
+ journal = {arXiv e-prints},
+ keywords = {Cosmology and Nongalactic Astrophysics, Machine Learning},
+ month = {October},
+ pages = {arXiv:2510.24631},
+ primaryclass = {astro-ph.CO},
+ title = {{Bridging Simulators with Conditional Optimal Transport}},
+ year = {2025}
+}
+
+@article{2025arXiv251017960P,
+ abstract = {{While foundation models have shown promise across a variety of fields,
+astronomy still lacks a unified framework for joint modeling
+across its highly diverse data modalities. In this paper, we
+present AION-1, a family of large-scale multimodal foundation
+models for astronomy. AION-1 integrates heterogeneous imaging,
+spectroscopic, and scalar data using a two-stage architecture:
+modality-specific tokenization followed by transformer-based
+masked modeling of cross-modal token sequences. The model is
+pretrained on five large-scale surveys: Legacy Survey, Hyper
+Suprime-Cam (HSC), Sloan Digital Sky Survey (SDSS), Dark Energy
+Spectroscopic Instrument (DESI), and Gaia. These span more than
+200 million observations of stars, galaxies, and quasars. With a
+single frozen encoder, AION-1 achieves strong results on a broad
+suite of downstream tasks, including galaxy and stellar property
+estimation, galaxy morphology classification, similarity-based
+retrieval, galaxy image segmentation, and spectral super-
+resolution. We release AION-1 model variants ranging from 300 M
+to 3.1 B parameters. Beyond astronomy, AION-1 provides a
+scalable blueprint for multimodal scientific foundation models
+that can seamlessly integrate noisy, instrument-specific
+observations. All code, tokenizers, pretrained weights, and a
+lightweight evaluation suite are released under an open-source
+license.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv251017960P},
+ archiveprefix = {arXiv},
+ arxiv = {2510.17960},
+ author = {{Parker}, Liam and {Lanusse}, Francois and {Shen}, Jeff and {Liu}, Ollie and {Hehir}, Tom and {Sarra}, Leopoldo and {Meyer}, Lucas and {Bowles}, Micah and {Wagner-Carena}, Sebastian and {Qu}, Helen and {Golkar}, Siavash and {Bietti}, Alberto and {Bourfoune}, Hatim and {Casserau}, Nathan and {Cornette}, Pierre and {Hirashima}, Keiya and {Krawezik}, Geraud and {Ohana}, Ruben and {Lourie}, Nicholas and {McCabe}, Michael and {Morel}, Rudy and {Mukhopadhyay}, Payel and {Pettee}, Mariel and {Regaldo-Saint Blancard}, Bruno and {Cho}, Kyunghyun and {Cranmer}, Miles and {Ho}, Shirley},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2510.17960},
+ eid = {arXiv:2510.17960},
+ eprint = {2510.17960},
+ journal = {arXiv e-prints},
+ keywords = {Instrumentation and Methods for Astrophysics, Cosmology and Nongalactic Astrophysics},
+ month = {October},
+ pages = {arXiv:2510.17960},
+ primaryclass = {astro-ph.IM},
+ selected = {true},
+ title = {{AION-1: Omnimodal Foundation Model for Astronomical Sciences}},
+ year = {2025}
+}
+
+@article{2025arXiv251017959S,
+ abstract = {{Sequential scientific data span many resolutions and domains, and
+unifying them into a common representation is a key step toward
+developing foundation models for the sciences. Astronomical
+spectra exemplify this challenge: massive surveys have collected
+millions of spectra across a wide range of wavelengths and
+resolutions, yet analyses remain fragmented across spectral
+domains (e.g., optical vs. infrared) and object types (e.g.,
+stars vs. galaxies), limiting the ability to pool information
+across datasets. We present a deep learning model that jointly
+learns from heterogeneous spectra in a self-supervised manner.
+Our universal spectral tokenizer processes spectra from a
+variety of object types and resolutions directly on their native
+wavelength grids, producing intrinsically aligned, homogeneous,
+and physically meaningful representations that can be
+efficiently adapted to achieve competitive performance across a
+range of downstream tasks. For the first time, we demonstrate
+that a single model can unify spectral data across resolutions
+and domains, suggesting that our model can serve as a powerful
+building block for foundation models in astronomy -- and
+potentially extend to other scientific domains with
+heterogeneous sequential data, such as climate and healthcare.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv251017959S},
+ archiveprefix = {arXiv},
+ arxiv = {2510.17959},
+ author = {{Shen}, Jeff and {Lanusse}, Francois and {Holden Parker}, Liam and {Liu}, Ollie and {Hehir}, Tom and {Sarra}, Leopoldo and {Meyer}, Lucas and {Bowles}, Micah and {Wagner-Carena}, Sebastian and {Wagner-Carena}, Sebastian and {Qu}, Helen and {Golkar}, Siavash and {Bietti}, Alberto and {Bourfoune}, Hatim and {Cassereau}, Nathan and {Cornette}, Pierre and {Hirashima}, Keiya and {Krawezik}, Geraud and {Ohana}, Ruben and {Lourie}, Nicholas and {McCabe}, Michael and {Morel}, Rudy and {Mukhopadhyay}, Payel and {Pettee}, Mariel and {R{\'e}galdo-Saint Blancard}, Bruno and {Cho}, Kyunghyun and {Cranmer}, Miles and {Ho}, Shirley},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2510.17959},
+ eid = {arXiv:2510.17959},
+ eprint = {2510.17959},
+ journal = {arXiv e-prints},
+ keywords = {Instrumentation and Methods for Astrophysics, Artificial Intelligence, Machine Learning},
+ month = {October},
+ pages = {arXiv:2510.17959},
+ primaryclass = {astro-ph.IM},
+ title = {{Universal Spectral Tokenization via Self-Supervised Panchromatic Representation Learning}},
+ year = {2025}
+}
+
+@article{2025MNRAS.542.2560J,
+ abbr = {MNRAS},
+ abstract = {{Forthcoming cosmological imaging surveys, such as the Rubin Observatory
+LSST, require large-scale simulations encompassing realistic
+galaxy populations for a variety of scientific applications. Of
+particular concern is the phenomenon of intrinsic alignments
+(IA), whereby galaxies orient themselves towards overdensities,
+potentially introducing significant systematic biases in weak
+gravitational lensing analyses if they are not properly
+modelled. Due to computational constraints, simulating the
+intricate details of galaxy formation and evolution relevant to
+IA across vast volumes is impractical. As an alternative, we
+propose a Deep Generative Model trained on the IllustrisTNG-100
+simulation to sample 3D galaxy shapes and orientations along
+with correlated scalar features, conditioned on the tidal fields
+and halo mass. The architecture consists of a SO(3)  diffusion
+generative model, implemented with E(3) equivariant Graph Neural
+Networks that explicitly respect the Euclidean symmetries of our
+Universe. The generated and the true values for geometric
+quantities using two-point statistics are statistically
+consistent; e.g. Wasserstein-1 distances indicate per cent-level
+(or better) agreement in the 1D distributions of scalar
+quantities. Notably, our model demonstrates the ability to
+jointly model Euclidean-valued scalars (galaxy sizes, shapes,
+and colours) along with non-Euclidean valued SO(3) quantities
+(galaxy orientations) that are governed by highly complex
+galactic physics at non-linear scales.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025MNRAS.542.2560J},
+ archiveprefix = {arXiv},
+ arxiv = {2409.18761},
+ author = {{Jagvaral}, Yesukhei and {Lanusse}, Fran{\c{c}}ois and {Mandelbaum}, Rachel},
+ bibtex_show = {true},
+ doi = {10.1093/mnras/staf592},
+ eprint = {2409.18761},
+ journal = {Monthly Notices of the Royal Astronomical Society},
+ keywords = {gravitational lensing: weak, methods: numerical, galaxies: statistics, galaxies: structure, cosmology: theory, Astrophysics - Astrophysics of Galaxies, Computer Science - Machine Learning},
+ month = {September},
+ number = {3},
+ pages = {2560-2571},
+ primaryclass = {astro-ph.GA},
+ title = {{Geometric deep learning for galaxy-halo connection: a case study for galaxy intrinsic alignments}},
+ volume = {542},
+ year = {2025}
+}
+
+@article{2025A&A...701A.110C,
+ abbr = {A&A},
+ abstract = {{Context. Galaxy clusters, the pinnacle of structure formation in our
+Universe, are a powerful cosmological probe. Several approaches
+have been proposed to express cluster number counts, but all
+these methods rely on empirical explicit scaling relations that
+link observed properties to the total cluster mass. These
+scaling relations are over-parametrised, inducing some
+degeneracy with cosmology. Moreover, they do not provide a
+direct handle on the numerous non-gravitational phenomena that
+affect the physics of the intra-cluster medium. Aims. We aim to
+present a proof-of-concept to model cluster number counts that
+bypasses the explicit use of scaling relations. We rather
+implement the effect of several astrophysical processes to
+describe the cluster properties. We then evaluate the
+performance of this modelling with regard to the cosmological
+inference. Methods. We developed an accelerated machine-learning
+baryonic field-emulator, based on an extension of the Lagrangian
+Deep Learning and trained on the CAMELS/IllustrisTNG
+simulations. We then created a pipeline that simulates cluster
+number counts in terms of XMM observable quantities. We finally
+compare the performances of our model, with that involving
+scaling relations, for the purpose of cosmological inference
+based on simulations. Results. Our model correctly reproduces
+the cluster population from the calibration simulations at the
+fiducial parameter values, and allows us to constrain feedback
+mechanisms. The cosmological-inference analyses indicate that
+our simulation-based model is less degenerate than the approach
+using scaling relations. Conclusions. This novel approach to
+modelling observed cluster number counts from simulations opens
+interesting perspectives for cluster cosmology. It has the
+potential to overcome the limitations of the standard approach,
+provided that the computing resolution and the volume of the
+simulations will allow a most realistic implementation of the
+complex phenomena driving cluster evolution.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025A&A...701A.110C},
+ archiveprefix = {arXiv},
+ arxiv = {2507.01820},
+ author = {{Cerardi}, N. and {Pierre}, M. and {Lanusse}, F. and {Corap}, X.},
+ bibtex_show = {true},
+ doi = {10.1051/0004-6361/202453553},
+ eid = {A110},
+ eprint = {2507.01820},
+ journal = {Astronomy and Astrophysics},
+ keywords = {cosmological parameters, X-rays: galaxies: clusters, Cosmology and Nongalactic Astrophysics},
+ month = {September},
+ pages = {A110},
+ primaryclass = {astro-ph.CO},
+ title = {{The Cosmological analysis of X-ray cluster surveys: VII. Bypassing scaling relations with Lagrangian Deep Learning and Simulation-based inference}},
+ volume = {701},
+ year = {2025}
+}
+
+@article{2025arXiv250702608R,
+ abstract = {{The steep computational cost of diffusion models at inference hinders
+their use as fast physics emulators. In the context of image and
+video generation, this computational drawback has been addressed
+by generating in the latent space of an autoencoder instead of
+the pixel space. In this work, we investigate whether a similar
+strategy can be effectively applied to the emulation of
+dynamical systems and at what cost. We find that the accuracy of
+latent-space emulation is surprisingly robust to a wide range of
+compression rates (up to 1000x). We also show that diffusion-
+based emulators are consistently more accurate than non-
+generative counterparts and compensate for uncertainty in their
+predictions with greater diversity. Finally, we cover practical
+design choices, spanning from architectures to optimizers, that
+we found critical to train latent-space emulators.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv250702608R},
+ archiveprefix = {arXiv},
+ arxiv = {2507.02608},
+ author = {{Rozet}, Fran{\c{c}}ois and {Ohana}, Ruben and {McCabe}, Michael and {Louppe}, Gilles and {Lanusse}, Fran{\c{c}}ois and {Ho}, Shirley},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2507.02608},
+ eid = {arXiv:2507.02608},
+ eprint = {2507.02608},
+ journal = {arXiv e-prints},
+ keywords = {Machine Learning, Fluid Dynamics},
+ month = {July},
+ pages = {arXiv:2507.02608},
+ primaryclass = {stat.ML},
+ title = {{Lost in Latent Space: An Empirical Study of Latent Diffusion Models for Physics Emulation}},
+ year = {2025}
+}
+
+@article{2025A&A...699A.327Z,
+ abbr = {A&A},
+ abstract = {{Context. Standard cosmological analysis, which is based on two-point
+statistics, fails to extract all the information embedded in the
+cosmological data. This limits our ability to precisely
+constrain cosmological parameters. Through willingness to use
+modern analysis techniques to match the power of upcoming
+telescopes, recent years have seen a paradigm shift from
+analytical likelihood-based to simulation-based inference.
+However, such methods require a large number of costly
+simulations. Aims. We focused on full-field inference, which is
+considered the optimal form of inference as it enables the
+recovery of cosmological constraints from simulations without
+any loss of cosmological information. Our objective is to review
+and benchmark several ways of conducting full-field inference to
+gain insight into the number of simulations required for each
+method. Specifically, we made a distinction between explicit
+inference methods that require an explicit form of the
+likelihood, such that it can be evaluated and thus sampled
+through sampling schemes and implicit inference methods that can
+be used when only an implicit version of the likelihood is
+available through simulations. Moreover, it is crucial for
+explicit full-field inference to use a differentiable forward
+model. Similarly, we aim to discuss the advantages of having
+differentiable forward models for implicit full-field inference.
+Methods. We used the sbi\_lens package
+(https://github.com/DifferentiableUniverseInitiative/sbi\_lens),
+which provides a fast and differentiable log-normal forward
+model to generate convergence maps mimicking a simplified
+version of LSST Y10 quality. While the analyses use a simplified
+forward model, the goal is to illustrate key methodologies and
+their implications. Specifically, this fast-forward model
+enables us to compare explicit and implicit full-field inference
+with and without gradient. The former is achieved by sampling
+the forward model through the No U-Turns (NUTS) sampler. The
+latter starts by compressing the data into sufficient statistics
+and uses the neural likelihood estimation (NLE) algorithm and
+the one augmented with gradient ({\ensuremath{\partial}}NLE) to
+learn the likelihood distribution and then sample the posterior
+distribution. Results. We performed a full-field analysis on
+LSST Y10-like weak-lensing-simulated log-normal convergence
+maps, where we constrain ({\ensuremath{\Omega}}$_{c}$,{\ensurema
+th{\Omega}}$_{b}$,{\ensuremath{\sigma}}$_{8}$,h$_{0}$,n$_{s}$,w$
+_{0}$). We demonstrate that explicit full-field and implicit
+full-field inference yield consistent constraints. Explicit
+full-field inference requires 630 000 simulations with our
+particular sampler, which corresponds to 400 independent
+samples. Implicit full-field inference requires a maximum of 101
+000 simulations split into 100 000 simulations to build neural-
+based sufficient statistics (this number of simulations is not
+fine-tuned) and 1000 simulations to perform inference using
+implicit inference. Additionally, while differentiability is
+very useful for explicit full-field inference, we show that, for
+this specific case, our way of exploiting the gradients does not
+help implicit full-field inference significantly.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025A&A...699A.327Z},
+ archiveprefix = {arXiv},
+ arxiv = {2409.17975},
+ author = {{Zeghal}, Justine and {Lanzieri}, Denise and {Lanusse}, Fran{\c{c}}ois and {Boucaud}, Alexandre and {Louppe}, Gilles and {Aubourg}, Eric and {Bayer}, Adrian E. and {LSST Dark Energy Science Collaboration}},
+ bibtex_show = {true},
+ doi = {10.1051/0004-6361/202452410},
+ eid = {A327},
+ eprint = {2409.17975},
+ journal = {Astronomy and Astrophysics},
+ keywords = {gravitational lensing: weak, methods: statistical, large-scale structure of Universe, Cosmology and Nongalactic Astrophysics, Instrumentation and Methods for Astrophysics},
+ month = {July},
+ pages = {A327},
+ primaryclass = {astro-ph.CO},
+ title = {{Simulation-based inference benchmark for weak lensing cosmology}},
+ volume = {699},
+ year = {2025}
+}
+
+@article{2025A&A...697A.162L,
+ abbr = {A&A},
+ abstract = {{Context. Traditionally, weak lensing cosmological surveys have been
+analyzed using summary statistics that were either motivated by
+their analytically tractable likelihoods (e.g., power spectrum)
+or by their ability to access some higher-order information
+(e.g., peak counts), but at the cost of requiring a simulation-
+based inference approach. In both cases, even if the statistics
+can be very informative, they are not designed nor guaranteed to
+be statistically sufficient (i.e., to capture all the
+cosmological information content of the data). With the rise of
+deep learning, however, it has becomes possible to create
+summary statistics that are specifically optimized to extract
+the full cosmological information content of the data. Yet, a
+fairly wide range of loss functions have been used in practice
+in the weak lensing literature to train such neural networks,
+leading to the natural question of whether a given loss should
+be preferred and whether sufficient statistics can be achieved
+in theory and in practice under these different choices. Aims.
+We compare different neural summarization strategies that have
+been proposed in the literature to identify the loss function
+that leads to theoretically optimal summary statistics for
+performing full-field cosmological inference. In doing so, we
+aim to provide guidelines and insights to the community to help
+guide future neural network-based cosmological inference
+analyses. Methods. We designed an experimental setup that allows
+us to isolate the specific impact of the loss function used to
+train neural summary statistics on weak lensing data at fixed
+neural architecture and simulation-based inference pipeline. To
+achieve this, we developed the sbi\_lens JAX package, which
+implements an automatically differentiable lognormal weak
+lensing simulator and the tools needed to perform explicit full-
+field inference with a Hamiltonian Monte Carlo (HMC) sampler
+over this model. Using sbi\_lens, we simulated a wCDM LSST Year
+10 weak lensing analysis scenario in which the full-field
+posterior obtained by HMC sampling gives us a ground truth that
+can be compared to different neural summarization strategies.
+Results. We provide theoretical insight into the different loss
+functions being used in the literature, including mean squared
+error (MSE) regression, and show that some do not necessarily
+lead to sufficient statistics, while those motivated by
+information theory, in particular variational mutual information
+maximization (VMIM), can in principle lead to sufficient
+statistics. Our numerical experiments confirm these insights,
+and we show on our simulated wCDM scenario that the figure of
+merit (FoM) of an analysis using neural summary statistics
+optimized under VMIM achieves 100\% of the reference
+{\ensuremath{\Omega}}$_{c}$‑{\ensuremath{\sigma}}$_{8}$ full-
+field FoM, while an analysis using summary statistics trained
+under simple MSE achieves only 81\% of the same reference FoM.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025A&A...697A.162L},
+ archiveprefix = {arXiv},
+ arxiv = {2407.10877},
+ author = {{Lanzieri}, Denise and {Zeghal}, Justine and {Lucas Makinen}, T. and {Boucaud}, Alexandre and {Starck}, Jean-Luc and {Lanusse}, Fran{\c{c}}ois},
+ bibtex_show = {true},
+ doi = {10.1051/0004-6361/202451535},
+ eid = {A162},
+ eprint = {2407.10877},
+ journal = {Astronomy and Astrophysics},
+ keywords = {gravitational lensing: weak, methods: statistical, large-scale structure of Universe, Cosmology and Nongalactic Astrophysics},
+ month = {May},
+ pages = {A162},
+ primaryclass = {astro-ph.CO},
+ title = {{Optimal neural summarization for full-field weak lensing cosmological implicit inference}},
+ volume = {697},
+ year = {2025}
+}
+
+@article{2025arXiv250315312E,
+ abstract = {{Modern astronomical surveys, such as the Euclid mission, produce high-
+dimensional, multi-modal data sets that include imaging and
+spectroscopic information for millions of galaxies. These data
+serve as an ideal benchmark for large, pre-trained multi-modal
+models, which can leverage vast amounts of unlabelled data. In
+this work, we present the first exploration of Euclid data with
+AstroPT, an autoregressive multi-modal foundation model trained
+on approximately 300 000 optical and infrared Euclid images and
+spectral energy distributions (SEDs) from the first Euclid Quick
+Data Release. We compare self-supervised pre-training with
+baseline fully supervised training across several tasks: galaxy
+morphology classification; redshift estimation; similarity
+searches; and outlier detection. Our results show that: (a)
+AstroPT embeddings are highly informative, correlating with
+morphology and effectively isolating outliers; (b) including
+infrared data helps to isolate stars, but degrades the
+identification of edge-on galaxies, which are better captured by
+optical images; (c) simple fine-tuning of these embeddings for
+photometric redshift and stellar mass estimation outperforms a
+fully supervised approach, even when using only 1\% of the
+training labels; and (d) incorporating SED data into AstroPT via
+a straightforward multi-modal token-chaining method improves
+photo-z predictions, and allow us to identify potentially more
+interesting anomalies (such as ringed or interacting galaxies)
+compared to a model pre-trained solely on imaging data.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025arXiv250315312E},
+ archiveprefix = {arXiv},
+ arxiv = {2503.15312},
+ author = {{Euclid Collaboration} and {Siudek}, M. and {Huertas-Company}, M. and {Smith}, M. and {Martinez-Solaeche}, G. and {Lanusse}, F. and {Ho}, S. and {Angeloudi}, E. and {Cunha}, P.~A.~C. and {Dom{\'\i}nguez S{\'a}nchez}, H. and {Dunn}, M. and {Fu}, Y. and {Iglesias-Navarro}, P. and {Junais}, J. and {Knapen}, J.~H. and {Laloux}, B. and {Mezcua}, M. and {Roster}, W. and {Stevens}, G. and {Vega-Ferrero}, J. and {Aghanim}, N. and {Altieri}, B. and {Amara}, A. and {Andreon}, S. and {Auricchio}, N. and {Aussel}, H. and {Baccigalupi}, C. and {Baldi}, M. and {Bardelli}, S. and {Battaglia}, P. and {Biviano}, A. and {Bonchi}, A. and {Branchini}, E. and {Brescia}, M. and {Brinchmann}, J. and {Camera}, S. and {Ca{\~n}as-Herrera}, G. and {Capobianco}, V. and {Carbone}, C. and {Carretero}, J. and {Casas}, S. and {Castander}, F.~J. and {Castellano}, M. and {Castignani}, G. and {Cavuoti}, S. and {Chambers}, K.~C. and {Cimatti}, A. and {Colodro-Conde}, C. and {Congedo}, G. and {Conselice}, C.~J. and {Conversi}, L. and {Copin}, Y. and {Courbin}, F. and {Courtois}, H.~M. and {Cropper}, M. and {Da Silva}, A. and {Degaudenzi}, H. and {De Lucia}, G. and {Di Giorgio}, A.~M. and {Dinis}, J. and {Dolding}, C. and {Dole}, H. and {Dubath}, F. and {Duncan}, C.~A.~J. and {Dupac}, X. and {Dusini}, S. and {Escoffier}, S. and {Farina}, M. and {Farinelli}, R. and {Faustini}, F. and {Ferriol}, S. and {Finelli}, F. and {Fotopoulou}, S. and {Frailis}, M. and {Franceschi}, E. and {Galeotta}, S. and {George}, K. and {Gillis}, B. and {Giocoli}, C. and {Gracia-Carpio}, J. and {Granett}, B.~R. and {Grazian}, A. and {Grupp}, F. and {Gwyn}, S. and {Haugan}, S.~V.~H. and {Holmes}, W. and {Hook}, I.~M. and {Hormuth}, F. and {Hornstrup}, A. and {Jahnke}, K. and {Jhabvala}, M. and {Keih{\"a}nen}, E. and {Kermiche}, S. and {Kiessling}, A. and {Kubik}, B. and {K{\"u}mmel}, M. and {Kunz}, M. and {Kurki-Suonio}, H. and {Le Boulc'h}, Q. and {Le Brun}, A.~M.~C. and {Le Mignant}, D. and {Ligori}, S. and {Lilje}, P.~B. and {Lindholm}, V. and {Lloro}, I. and {Mainetti}, G. and {Maino}, D. and {Maiorano}, E. and {Mansutti}, O. and {Marcin}, S. and {Marggraf}, O. and {Martinelli}, M. and {Martinet}, N. and {Marulli}, F. and {Massey}, R. and {Maurogordato}, S. and {McCracken}, H.~J. and {Medinaceli}, E. and {Mei}, S. and {Melchior}, M. and {Mellier}, Y. and {Meneghetti}, M. and {Merlin}, E. and {Meylan}, G. and {Mora}, A. and {Moresco}, M. and {Moscardini}, L. and {Nakajima}, R. and {Neissner}, C. and {Niemi}, S. -M. and {Nightingale}, J.~W. and {Padilla}, C. and {Paltani}, S. and {Pasian}, F. and {Pedersen}, K. and {Percival}, W.~J. and {Pettorino}, V. and {Pires}, S. and {Polenta}, G. and {Poncet}, M. and {Popa}, L.~A. and {Pozzetti}, L. and {Raison}, F. and {Renzi}, A. and {Rhodes}, J. and {Riccio}, G. and {Romelli}, E. and {Roncarelli}, M. and {Saglia}, R. and {Sakr}, Z. and {S{\'a}nchez}, A.~G. and {Sapone}, D. and {Sartoris}, B. and {Schewtschenko}, J.~A. and {Schneider}, P. and {Schrabback}, T. and {Scodeggio}, M. and {Secroun}, A. and {Seidel}, G. and {Seiffert}, M. and {Serrano}, S. and {Simon}, P. and {Sirignano}, C. and {Sirri}, G. and {Stanco}, L. and {Steinwagner}, J. and {Tallada-Cresp{\'\i}}, P. and {Taylor}, A.~N. and {Tereno}, I. and {Toft}, S. and {Toledo-Moreo}, R. and {Torradeflot}, F. and {Tutusaus}, I. and {Valenziano}, L. and {Valiviita}, J. and {Vassallo}, T. and {Verdoes Kleijn}, G. and {Veropalumbo}, A. and {Wang}, Y. and {Weller}, J. and {Zacchei}, A. and {Zamorani}, G. and {Zerbi}, F.~M. and {Zinchenko}, I.~A. and {Zucca}, E. and {Allevato}, V. and {Ballardini}, M. and {Bolzonella}, M. and {Bozzo}, E. and {Burigana}, C. and {Cabanac}, R. and {Cappi}, A. and {Di Ferdinando}, D. and {Escartin Vigo}, J.~A. and {Gabarra}, L. and {Mart{\'\i}n-Fleitas}, J. and {Matthew}, S. and {Mauri}, N. and {Metcalf}, R.~B. and {Pezzotta}, A.},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2503.15312},
+ eid = {arXiv:2503.15312},
+ eprint = {2503.15312},
+ journal = {arXiv e-prints},
+ keywords = {Astrophysics - Astrophysics of Galaxies},
+ month = {March},
+ pages = {arXiv:2503.15312},
+ primaryclass = {astro-ph.GA},
+ title = {{Euclid Quick Data Release (Q1) Exploring galaxy properties with a multi-modal foundation model}},
+ year = {2025}
+}
+
+@article{2025ApJ...980..245C,
+ abbr = {ApJ},
+ abstract = {{The intracluster light (ICL) is an important tracer of a galaxy
+cluster's history and past interactions. However, only small
+samples have been studied to date due to its very low surface
+brightness and the heavy manual involvement required for the
+majority of measurement algorithms. Upcoming large imaging
+surveys such as the Vera C. Rubin Observatory's Legacy Survey of
+Space and Time (LSST) are expected to vastly expand available
+samples of deep cluster images. However, to process this
+increased amount of data, we need faster, fully automated
+methods to streamline the measurement process. This paper
+presents a machine learning model designed to automatically
+measure the ICL fraction in large samples of images, with no
+manual preprocessing required. We train the fully supervised
+model on a training data set of 50,000 images with injected
+artificial ICL profiles. We then transfer its learning onto real
+data by fine-tuning with a sample of 101 real clusters with
+their ICL fraction measured manually using the surface
+brightness threshold method. With this process, the model is
+able to effectively learn the task and then adapt its learning
+to real cluster images. Our model can be directly applied to
+Hyper Suprime-Cam images, processing up to 500 images in a
+matter of seconds on a single GPU, or fine-tuned for other
+imaging surveys such as LSST, with the fine-tuning process
+taking just 3 minutes. The model could also be retrained to
+match other ICL measurement methods. Our model and the code for
+training it are made available on GitHub.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2025ApJ...980..245C},
+ archiveprefix = {arXiv},
+ arxiv = {2501.08378},
+ author = {{Canepa}, Louisa and {Brough}, Sarah and {Lanusse}, Francois and {Montes}, Mireia and {Hatch}, Nina},
+ bibtex_show = {true},
+ doi = {10.3847/1538-4357/adabc7},
+ eid = {245},
+ eprint = {2501.08378},
+ journal = {Astrophysical Journal},
+ keywords = {Galaxy clusters, Galactic and extragalactic astronomy, Convolutional neural networks, 584, 563, 1938, Astrophysics - Astrophysics of Galaxies, Astrophysics - Instrumentation and Methods for Astrophysics},
+ month = {February},
+ number = {2},
+ pages = {245},
+ primaryclass = {astro-ph.GA},
+ title = {{Measuring the Intracluster Light Fraction with Machine Learning}},
+ volume = {980},
+ year = {2025}
+}
+
 @article{2025A&A...693A..46K,
  abbr = {A&A},
  abstract = {{Context. The number density of galaxy clusters across mass and redshift
@@ -47,7 +953,6 @@ relation coefficients, thus avoiding potential biases resulting
 from such a procedure.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2025A&A...693A..46K},
- altmetric = {167174382},
  archiveprefix = {arXiv},
  arxiv = {2409.06001},
  author = {{Kosiba}, M. and {Cerardi}, N. and {Pierre}, M. and {Lanusse}, F. and {Garrel}, C. and {Werner}, N. and {Shalak}, M.},
@@ -134,102 +1039,6 @@ simple and practical as possible.}},
  year = {2024}
 }
 
-@article{2024arXiv240918761J,
- abstract = {{Forthcoming cosmological imaging surveys, such as the Rubin Observatory
-LSST, require large-scale simulations encompassing realistic
-galaxy populations for a variety of scientific applications. Of
-particular concern is the phenomenon of intrinsic alignments
-(IA), whereby galaxies orient themselves towards overdensities,
-potentially introducing significant systematic biases in weak
-gravitational lensing analyses if they are not properly modeled.
-Due to computational constraints, simulating the intricate
-details of galaxy formation and evolution relevant to IA across
-vast volumes is impractical. As an alternative, we propose a
-Deep Generative Model trained on the IllustrisTNG-100 simulation
-to sample 3D galaxy shapes and orientations to accurately
-reproduce intrinsic alignments along with correlated scalar
-features. We model the cosmic web as a set of graphs, each graph
-representing a halo with nodes representing the
-subhalos/galaxies. The architecture consists of a SO(3) $\times$
-$\mathbb{R}^n$ diffusion generative model, for galaxy
-orientations and $n$ scalars, implemented with E(3) equivariant
-Graph Neural Networks that explicitly respect the Euclidean
-symmetries of our Universe. The model is able to learn and
-predict features such as galaxy orientations that are
-statistically consistent with the reference simulation. Notably,
-our model demonstrates the ability to jointly model Euclidean-
-valued scalars (galaxy sizes, shapes, and colors) along with
-non-Euclidean valued SO(3) quantities (galaxy orientations) that
-are governed by highly complex galactic physics at non-linear
-scales.}},
- adsnote = {Provided by the SAO/NASA Astrophysics Data System},
- adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv240918761J},
- archiveprefix = {arXiv},
- arxiv = {2409.18761},
- author = {{Jagvaral}, Yesukhei and {Lanusse}, Francois and {Mandelbaum}, Rachel},
- bibtex_show = {true},
- doi = {10.48550/arXiv.2409.18761},
- eid = {arXiv:2409.18761},
- eprint = {2409.18761},
- journal = {arXiv e-prints},
- keywords = {Astrophysics - Astrophysics of Galaxies, Computer Science - Machine Learning},
- month = {September},
- pages = {arXiv:2409.18761},
- primaryclass = {astro-ph.GA},
- title = {{Geometric deep learning for galaxy-halo connection: a case study for galaxy intrinsic alignments}},
- year = {2024}
-}
-
-@article{2024arXiv240917975Z,
- abstract = {{Standard cosmological analysis, which relies on two-point statistics,
-fails to extract the full information of the data. This limits
-our ability to constrain with precision cosmological parameters.
-Thus, recent years have seen a paradigm shift from analytical
-likelihood-based to simulation-based inference. However, such
-methods require a large number of costly simulations. We focus
-on full-field inference, considered the optimal form of
-inference. Our objective is to benchmark several ways of
-conducting full-field inference to gain insight into the number
-of simulations required for each method. We make a distinction
-between explicit and implicit full-field inference. Moreover, as
-it is crucial for explicit full-field inference to use a
-differentiable forward model, we aim to discuss the advantages
-of having this property for the implicit approach. We use the
-sbi\_lens package which provides a fast and differentiable log-
-normal forward model. This forward model enables us to compare
-explicit and implicit full-field inference with and without
-gradient. The former is achieved by sampling the forward model
-through the No U-Turns sampler. The latter starts by compressing
-the data into sufficient statistics and uses the Neural
-Likelihood Estimation algorithm and the one augmented with
-gradient. We perform a full-field analysis on LSST Y10 like weak
-lensing simulated mass maps. We show that explicit and implicit
-full-field inference yield consistent constraints. Explicit
-inference requires 630 000 simulations with our particular
-sampler corresponding to 400 independent samples. Implicit
-inference requires a maximum of 101 000 simulations split into
-100 000 simulations to build sufficient statistics (this number
-is not fine tuned) and 1 000 simulations to perform inference.
-Additionally, we show that our way of exploiting the gradients
-does not significantly help implicit inference.}},
- adsnote = {Provided by the SAO/NASA Astrophysics Data System},
- adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv240917975Z},
- archiveprefix = {arXiv},
- arxiv = {2409.17975},
- author = {{Zeghal}, Justine and {Lanzieri}, Denise and {Lanusse}, Fran{\c{c}}ois and {Boucaud}, Alexandre and {Louppe}, Gilles and {Aubourg}, Eric and {Bayer}, Adrian E. and {The LSST Dark Energy Science Collaboration}},
- bibtex_show = {true},
- doi = {10.48550/arXiv.2409.17975},
- eid = {arXiv:2409.17975},
- eprint = {2409.17975},
- journal = {arXiv e-prints},
- keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics, Astrophysics - Instrumentation and Methods for Astrophysics},
- month = {September},
- pages = {arXiv:2409.17975},
- primaryclass = {astro-ph.CO},
- title = {{Simulation-Based Inference Benchmark for LSST Weak Lensing Cosmology}},
- year = {2024}
-}
-
 @article{2024arXiv240911401P,
  abstract = {{We develop a transformer-based conditional generative model for discrete
 point objects and their properties. We use it to build a model
@@ -267,56 +1076,6 @@ available at
  year = {2024}
 }
 
-@article{2024arXiv240710877L,
- abstract = {{Traditionally, weak lensing cosmological surveys have been analyzed
-using summary statistics motivated by their analytically
-tractable likelihoods, or by their ability to access higher-
-order information, at the cost of requiring Simulation-Based
-Inference (SBI) approaches. While informative, these statistics
-are neither designed nor guaranteed to be statistically
-sufficient. With the rise of deep learning, it becomes possible
-to create summary statistics optimized to extract the full data
-information. We compare different neural summarization
-strategies proposed in the weak lensing literature, to assess
-which loss functions lead to theoretically optimal summary
-statistics to perform full-field inference. In doing so, we aim
-to provide guidelines and insights to the community to help
-guide future neural-based inference analyses. We design an
-experimental setup to isolate the impact of the loss function
-used to train neural networks. We have developed the sbi\_lens
-JAX package, which implements an automatically differentiable
-lognormal wCDM LSST-Y10 weak lensing simulator. The explicit
-full-field posterior obtained using the Hamilotnian-Monte-Carlo
-sampler gives us a ground truth to which to compare different
-compression strategies. We provide theoretical insight into the
-loss functions used in the literature and show that some do not
-necessarily lead to sufficient statistics (e.g. Mean Square
-Error (MSE)), while those motivated by information theory (e.g.
-Variational Mutual Information Maximization (VMIM)) can. Our
-numerical experiments confirm these insights and show, in our
-simulated wCDM scenario, that the Figure of Merit (FoM) of an
-analysis using neural summaries optimized under VMIM achieves
-100\% of the reference Omega\_c - sigma\_8 full-field FoM, while
-an analysis using neural summaries trained under MSE achieves
-only 81\% of the same reference FoM.}},
- adsnote = {Provided by the SAO/NASA Astrophysics Data System},
- adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv240710877L},
- archiveprefix = {arXiv},
- arxiv = {2407.10877},
- author = {{Lanzieri}, Denise and {Zeghal}, Justine and {Makinen}, T. Lucas and {Boucaud}, Alexandre and {Starck}, Jean-Luc and {Lanusse}, Fran{\c{c}}ois},
- bibtex_show = {true},
- doi = {10.48550/arXiv.2407.10877},
- eid = {arXiv:2407.10877},
- eprint = {2407.10877},
- journal = {arXiv e-prints},
- keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics},
- month = {July},
- pages = {arXiv:2407.10877},
- primaryclass = {astro-ph.CO},
- title = {{Optimal Neural Summarisation for Full-Field Weak Lensing Cosmological Implicit Inference}},
- year = {2024}
-}
-
 @article{2024MNRAS.531.4990P,
  abbr = {MNRAS},
  abstract = {{We present AstroCLIP, a single, versatile model that can embed both
@@ -351,7 +1110,6 @@ self-supervised transformer-based architectures for galaxy
 images and spectra.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.4990P},
- altmetric = {155137057},
  archiveprefix = {arXiv},
  arxiv = {2310.03024},
  author = {{Parker}, Liam and {Lanusse}, Francois and {Golkar}, Siavash and {Sarra}, Leopoldo and {Cranmer}, Miles and {Bietti}, Alberto and {Eickenberg}, Michael and {Krawezik}, Geraud and {McCabe}, Michael and {Morel}, Rudy and {Ohana}, Ruben and {Pettee}, Mariel and {R{\'e}galdo-Saint Blancard}, Bruno and {Cho}, Kyunghyun and {Ho}, Shirley and {Polymathic AI Collaboration}},
@@ -364,6 +1122,7 @@ images and spectra.}},
  number = {4},
  pages = {4990-5011},
  primaryclass = {astro-ph.IM},
+ selected = {true},
  title = {{AstroCLIP: a cross-modal foundation model for galaxies}},
  volume = {531},
  year = {2024}
@@ -401,13 +1160,12 @@ and the ability to perform similarity searches using a single
 example of a galaxy with tidal features.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.4070D},
- altmetric = {164717667},
  archiveprefix = {arXiv},
- arxiv = {2307.04967},
+ arxiv = {2308.07962},
  author = {{Desmons}, Alice and {Brough}, Sarah and {Lanusse}, Francois},
  bibtex_show = {true},
  doi = {10.1093/mnras/stae1402},
- eprint = {2307.04967},
+ eprint = {2308.07962},
  journal = {Monthly Notices of the Royal Astronomical Society},
  keywords = {Astrophysics - Astrophysics of Galaxies, Astrophysics - Instrumentation and Methods for Astrophysics},
  month = {July},
@@ -454,7 +1212,6 @@ measurements of galaxy-orientation correlation functions in the
 highly nonlinear regime.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2024OJAp....7E..45V},
- altmetric = {156431796},
  archiveprefix = {arXiv},
  arxiv = {2311.07374},
  author = {{Van Alfen}, Nicholas and {Campbell}, Duncan and {Blazek}, Jonathan and {Leonard}, C. Danielle and {Lanusse}, Francois and {Hearin}, Andrew and {Mandelbaum}, Rachel and {LSST Dark Energy Science Collaboration}},
@@ -476,14 +1233,14 @@ highly nonlinear regime.}},
  abstract = {{Diffusion models recently proved to be remarkable priors for Bayesian
 inverse problems. However, training these models typically
 requires access to large amounts of clean data, which could
-prove difficult in some settings. In this work, we present a
-novel method based on the expectation-maximization algorithm for
-training diffusion models from incomplete and noisy observations
-only. Unlike previous works, our method leads to proper
+prove difficult in some settings. In this work, we present DiEM,
+a novel method based on the expectation-maximization algorithm
+for training diffusion models from incomplete and noisy
+observations only. Unlike previous works, DiEM leads to proper
 diffusion models, which is crucial for downstream tasks. As part
-of our method, we propose and motivate an improved posterior
+of our methods, we propose and motivate an improved posterior
 sampling scheme for unconditional diffusion models. We present
-empirical evidence supporting the effectiveness of our method.}},
+empirical evidence supporting the effectiveness of our approach.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2024arXiv240513712R},
  archiveprefix = {arXiv},
@@ -494,10 +1251,11 @@ empirical evidence supporting the effectiveness of our method.}},
  eid = {arXiv:2405.13712},
  eprint = {2405.13712},
  journal = {arXiv e-prints},
- keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
+ keywords = {Machine Learning},
  month = {May},
  pages = {arXiv:2405.13712},
- primaryclass = {cs.LG},
+ primaryclass = {stat.ML},
+ selected = {true},
  title = {{Learning Diffusion Priors from Observations by Expectation Maximization}},
  year = {2024}
 }
@@ -564,7 +1322,6 @@ pmwd (PM with derivatives). Based on the powerful AD system JAX,
 pmwd is fully differentiable, and is highly performant on GPUs.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2024ApJS..270...36L},
- altmetric = {138696087},
  archiveprefix = {arXiv},
  arxiv = {2211.09815},
  author = {{Li}, Yin and {Modi}, Chirag and {Jamieson}, Drew and {Zhang}, Yucheng and {Lu}, Libin and {Feng}, Yu and {Lanusse}, Fran{\c{c}}ois and {Greengard}, Leslie},
@@ -658,7 +1415,6 @@ density fluctuations, {\ensuremath{\sigma}}$_{8}$, and the
 amplitude of the intrinsic alignment signal, A$_{IA}$.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2023A&A...679A..61L},
- altmetric = {148327378},
  archiveprefix = {arXiv},
  arxiv = {2305.07531},
  author = {{Lanzieri}, Denise and {Lanusse}, Fran{\c{c}}ois and {Modi}, Chirag and {Horowitz}, Benjamin and {Harnois-D{\'e}raps}, Joachim and {Starck}, Jean-Luc and {LSST Dark Energy Science Collaboration (LSST DESC)}},
@@ -751,49 +1507,49 @@ distribution generalization and computational efficiency.}},
 }
 
 @inproceedings{2023mla..confE..11D,
- abstract = {{Low surface brightness substructures around galaxies, known as tidal
-features, are a valuable tool in the detection of past or
-ongoing galaxy mergers, and their properties can answer
-questions about the progenitor galaxies involved in the
-interactions. The assembly of current tidal feature samples is
-primarily achieved using visual classification, making it
-difficult to construct large samples and draw accurate and
-statistically robust conclusions about the galaxy evolution
-process. With upcoming large optical imaging surveys such as the
-Vera C. Rubin Observatory Legacy Survey of Space and Time
-(LSST), predicted to observe billions of galaxies, it is
-imperative that we refine our methods of detecting and
-classifying samples of merging galaxies. This paper presents
-promising results from a self-supervised machine learning model,
-trained on data from the Ultradeep layer of the Hyper Suprime-
-Cam Subaru Strategic Program optical imaging survey, designed to
-automate the detection of tidal features. We find that self-
-supervised models are capable of detecting tidal features, and
-that our model outperforms previous automated tidal feature
-detection methods, including a fully supervised model. An
-earlier method applied to real galaxy images achieved 76\%
-completeness for 22\% contamination, while our model achieves
-considerably higher (96\%) completeness for the same level of
-contamination. We emphasise a number of advantages of self-
-supervised models over fully supervised models including
-maintaining excellent performance when using only 50 labelled
-examples for training, and the ability to perform similarity
-searches using a single example of a galaxy with tidal features.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2023mla..confE..11D},
- archiveprefix = {arXiv},
- arxiv = {2308.07962},
  author = {{Desmons}, Alice and {Brough}, Sarah and {Lanusse}, Francois},
  bibtex_show = {true},
  booktitle = {Machine Learning for Astrophysics},
- doi = {10.48550/arXiv.2308.07962},
  eid = {11},
- eprint = {2308.07962},
- keywords = {Astrophysics - Astrophysics of Galaxies, Astrophysics - Instrumentation and Methods for Astrophysics},
  month = {July},
  pages = {11},
- primaryclass = {astro-ph.GA},
  title = {{Detecting Tidal Features using Self-Supervised Learning}},
+ year = {2023}
+}
+
+@article{2023arXiv230704967D,
+ abstract = {{Low surface brightness substructures around galaxies, known as tidal
+features, are a valuable tool in the detection of past or
+ongoing galaxy mergers. Their properties can answer questions
+about the progenitor galaxies involved in the interactions. This
+paper presents promising results from a self-supervised machine
+learning model, trained on data from the Ultradeep layer of the
+Hyper Suprime-Cam Subaru Strategic Program optical imaging
+survey, designed to automate the detection of tidal features. We
+find that self-supervised models are capable of detecting tidal
+features and that our model outperforms previous automated tidal
+feature detection methods, including a fully supervised model.
+The previous state of the art method achieved 76\% completeness
+for 22\% contamination, while our model achieves considerably
+higher (96\%) completeness for the same level of contamination.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2023arXiv230704967D},
+ archiveprefix = {arXiv},
+ arxiv = {2307.04967},
+ author = {{Desmons}, Alice and {Brough}, Sarah and {Lanusse}, Francois},
+ bibtex_show = {true},
+ doi = {10.48550/arXiv.2307.04967},
+ eid = {arXiv:2307.04967},
+ eprint = {2307.04967},
+ journal = {arXiv e-prints},
+ keywords = {Astrophysics - Astrophysics of Galaxies, Astrophysics - Instrumentation and Methods for Astrophysics},
+ month = {July},
+ pages = {arXiv:2307.04967},
+ preview = {/assets/img/publication_preview/SSL.png},
+ primaryclass = {astro-ph.GA},
+ title = {{Detecting Tidal Features using Self-Supervised Representation Learning}},
  year = {2023}
 }
 
@@ -832,7 +1588,6 @@ methodology for model validation in the early stages of
 analysis.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2023OJAp....6E..15C},
- altmetric = {142439565},
  archiveprefix = {arXiv},
  arxiv = {2302.05163},
  author = {{Campagne}, Jean-Eric and {Lanusse}, Fran{\c{c}}ois and {Zuntz}, Joe and {Boucaud}, Alexandre and {Casas}, Santiago and {Karamanis}, Minas and {Kirkby}, David and {Lanzieri}, Denise and {Peel}, Austin and {Li}, Yin},
@@ -891,10 +1646,9 @@ href=``https://github.com/CosmoStat/jax-
 lensing''>https://github.com/CosmoStat/jax-lensing</A>.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2023A&A...672A..51R},
- altmetric = {121044005},
  archiveprefix = {arXiv},
  arxiv = {2201.05561},
- author = {{Remy}, B. and {Lanusse}, F. and {Jeffrey}, N. and {Liu}, J. and {Starck}, J. -L. and {Osato}, K. and {Schrabback}, T.},
+ author = {{Remy}, B. and {Lanusse}, F. and {Jeffrey}, N. and {Liu}, J. and {Starck}, J.-L. and {Osato}, K. and {Schrabback}, T.},
  bibtex_show = {true},
  code = {https://github.com/CosmoStat/jax-lensing},
  doi = {10.1051/0004-6361/202243054},
@@ -944,7 +1698,6 @@ Limber approximation on these scales (with a full non-Limber
 method at smaller $\ell$) does suffice.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2023OJAp....6E...8L},
- altmetric = {139929347},
  archiveprefix = {arXiv},
  arxiv = {2212.04291},
  author = {{Leonard}, C. Danielle and {Ferreira}, Tassia and {Fang}, Xiao and {Reischke}, Robert and {Schoeneberg}, Nils and {Tr{\"o}ster}, Tilman and {Alonso}, David and {Campagne}, Jean-Eric and {Lanusse}, Fran{\c{c}}ois and {Slosar}, An{\v{z}}e and {Ishak}, Mustapha},
@@ -1006,7 +1759,6 @@ labelling and domain shift issues from training with
 simulations, which constitutes a common practice in astronomy.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2023PASA...40....1H},
- altmetric = {136838196},
  archiveprefix = {arXiv},
  arxiv = {2210.01813},
  author = {{Huertas-Company}, M. and {Lanusse}, F.},
@@ -1165,7 +1917,6 @@ Additionally, the model is able to capture the dependence of IA
 on mass, morphological type, and central/satellite type.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2022MNRAS.516.2406J},
- altmetric = {126614171},
  archiveprefix = {arXiv},
  arxiv = {2204.07077},
  author = {{Jagvaral}, Yesukhei and {Lanusse}, Fran{\c{c}}ois and {Singh}, Sukhdeep and {Mandelbaum}, Rachel and {Ravanbakhsh}, Siamak and {Campbell}, Duncan},
@@ -1196,7 +1947,6 @@ in machine-learned models with an emphasis on issues relevant to
 physics problems.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2022NatRP...4..573G},
- altmetric = {134861120},
  author = {{Gal}, Yarin and {Koumoutsakos}, Petros and {Lanusse}, Francois and {Louppe}, Gilles and {Papadimitriou}, Costas},
  bibtex_show = {true},
  doi = {10.1038/s42254-022-00498-4},
@@ -1322,7 +2072,6 @@ of the posterior and improves sample-efficiency.}},
  month = {July},
  pages = {52},
  primaryclass = {astro-ph.IM},
- selected = {true},
  slides = {https://slideslive.com/38985996/neural-posterior-estimation-with-differentiable-simulators?ref=speaker-24378},
  title = {{Neural Posterior Estimation with Differentiable Simulator}},
  year = {2022}
@@ -1366,6 +2115,74 @@ graphs in an astrophysical/cosmological context.}},
  year = {2022}
 }
 
+@inproceedings{2022eas..conf.2081D,
+ abstract = {{With the advent of the Rubin Observatory's Legacy Survey of Space and
+Time (LSST), which will reach the petabyte data regime, it is
+imperative that we refine our methods of detecting and
+classifying images of interest within this myriad of data. In
+this talk I will present promising results from a Self-
+Supervised Machine Learning Algorithm, specifically the SimSiam
+Contrastive Learning model, regarding the detection of galaxies
+possessing low surface-brightness tidal features such as streams
+or shells. The algorithm has been tested on a sample of tens of
+thousands of galaxies drawn from the Hyper Suprime-Cam Subaru
+Strategic Program (HSC-SSP) Ultradeep survey. I will describe
+the methods involved in isolating these galaxies and how the
+same methods can be applied to larger future surveys such as
+LSST. With such automated detection, LSST offers the first
+opportunity to study a large, statistical sample of these
+important features to answer outstanding questions regarding
+galaxy evolution.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2022eas..conf.2081D},
+ author = {{Desmons}, Alice and {Lanusse}, Francois and {Brough}, Sarah},
+ bibtex_show = {true},
+ booktitle = {EAS2022, European Astronomical Society Annual Meeting},
+ eid = {2081},
+ month = {July},
+ pages = {2081},
+ title = {{Self-Supervised Machine Learning; Detecting Galaxy Tidal Features in HSC-SSP}},
+ year = {2022}
+}
+
+@inproceedings{2022eas..conf.1334L,
+ abstract = {{In recent years we have seen the development of new and very efficient
+so-called Likelihood-Free Inference (LFI) methodologies, powered
+by Neural Density Estimation methods and capable of retrieving
+asymptotically exact Bayesian posteriors by only having access
+to a simulator of the observations. Not only does LFI promise
+tractable inference over arbitrarily large and complex Bayesian
+models which were classically intractable by MCMC, but some
+variants also promise much faster (even near-instantaneous)
+inference. \textbackslash\textbackslashI will review in this
+talk some exciting applications of LFI that have emerged in
+astrophysics, with in particular the problem of cosmological
+inference from dark matter mass-maps, or for automated and fast
+inference of model parameters in microlensing events.
+\textbackslash\textbackslashHowever, for all of its promises,
+like for many methods rooted in Neural Networks, LFI techniques
+still face a number of challenges, not only at a pure
+methodological level, but also in their interpretation and safe
+application to data. It has for instance been noted recently
+that despite asymptotic guarantees, in practice LFI posteriors
+are often not providing accurate posteriors. Another cause for
+concern might be the difficulty of testing the inference or
+detecting systematic biases in these techniques that rely on a
+black-box neural network to interpret the data. I will
+illustrate some of these challenges with particular examples in
+the second half of my talk.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2022eas..conf.1334L},
+ author = {{Lanusse}, Francois},
+ bibtex_show = {true},
+ booktitle = {EAS2022, European Astronomical Society Annual Meeting},
+ eid = {1334},
+ month = {July},
+ pages = {1334},
+ title = {{Promises and Challenges of Likelihood-Free Inference for Astronomical Surveys}},
+ year = {2022}
+}
+
 @article{2022A&A...663A..69N,
  abbr = {A&A},
  abstract = {{Deep learning (DL) has shown remarkable results in solving inverse
@@ -1388,10 +2205,9 @@ of a simulated radio dataset that we make available for the
 community. A range of examples illustrates the results.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2022A&A...663A..69N},
- altmetric = {124699309},
  archiveprefix = {arXiv},
  arxiv = {2203.07412},
- author = {{Nammour}, F. and {Akhaury}, U. and {Girard}, J.~N. and {Lanusse}, F. and {Sureau}, F. and {Ben Ali}, C. and {Starck}, J. -L.},
+ author = {{Nammour}, F. and {Akhaury}, U. and {Girard}, J.~N. and {Lanusse}, F. and {Sureau}, F. and {Ben Ali}, C. and {Starck}, J.-L.},
  bibtex_show = {true},
  doi = {10.1051/0004-6361/202142626},
  eid = {A69},
@@ -1420,7 +2236,6 @@ Galaxy, the Local Volume, from the nearby to the primaeval
 Universe, and cosmology.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2022zndo...5836022G},
- altmetric = {120685676},
  archiveprefix = {arXiv},
  arxiv = {2201.03862},
  author = {{Guy}, Leanne P. and {Cuillandre}, Jean-Charles and {Bachelet}, Etienne and {Banerji}, Manda and {Bauer}, Franz E. and {Collett}, Thomas and {Conselice}, Christopher J. and {Eggl}, Siegfried and {Ferguson}, Annette and {Fontana}, Adriano and {Heymans}, Catherine and {Hook}, Isobel M. and {Aubourg}, {\'E}ric and {Aussel}, Herv{\'e} and {Bosch}, James and {Carry}, Benoit and {Hoekstra}, Henk and {Kuijken}, Konrad and {Lanusse}, Francois and {Melchior}, Peter and {Mohr}, Joseph and {Moresco}, Michele and {Nakajima}, Reiko and {Paltani}, St{\'e}phane and {Troxel}, Michael and {Allevato}, Viola and {Amara}, Adam and {Andreon}, Stefano and {Anguita}, Timo and {Bardelli}, Sandro and {Bechtol}, Keith and {Birrer}, Simon and {Bisigello}, Laura and {Bolzonella}, Micol and {Botticella}, Maria Teresa and {Bouy}, Herv{\'e} and {Brinchmann}, Jarle and {Brough}, Sarah and {Camera}, Stefano and {Cantiello}, Michele and {Cappellaro}, Enrico and {Carlin}, Jeffrey L. and {Castander}, Francisco J. and {Castellano}, Marco and {Chari}, Ranga Ram and {Chisari}, Nora Elisa and {Collins}, Christopher and {Courbin}, Fr{\'e}d{\'e}ric and {Cuby}, Jean-Gabriel and {Cucciati}, Olga and {Daylan}, Tansu and {Diego}, Jose M. and {Duc}, Pierre-Alain and {Fotopoulou}, Sotiria and {Fouchez}, Dominique and {Gavazzi}, Rapha{\"e}l and {Gruen}, Daniel and {Hatfield}, Peter and {Hildebrandt}, Hendrik and {Landt}, Hermine and {Hunt}, Leslie K. and {Ibata}, Rodrigo and {Ilbert}, Olivier and {Jasche}, Jens and {Joachimi}, Benjamin and {Joseph}, R{\'e}my and {Knight}, Matthew and {Kotak}, Rubina and {Laigle}, Clotilde and {Lan{\c{c}}on}, Ariane and {Larsen}, S{\o}ren S. and {Lavaux}, Guilhem and {Leclercq}, Florent and {Leonard}, C. Danielle and {von der Linden}, Anja and {Liu}, Xin and {Longo}, Giuseppe and {Magliocchetti}, Manuela and {Maraston}, Claudia and {Marshall}, Phil and {Mart{\'\i}n}, Eduardo L. and {Mattila}, Seppo and {Maturi}, Matteo and {McCracken}, Henry Joy and {Metcalf}, R. Benton and {Montes}, Mireia and {Mortlock}, Daniel and {Moscardini}, Lauro and {Narayan}, Gautham and {Paolillo}, Maurizio and {Papaderos}, Polychronis and {Pello}, Roser and {Pozzetti}, Lucia and {Radovich}, Mario and {Rejkuba}, Marina and {Rom{\'a}n}, Javier and {S{\'a}nchez-Janssen}, Rub{\'e}n and {Sarpa}, Elena and {Sartoris}, Barbara and {Schrabback}, Tim and {Sluse}, Dominique and {Smartt}, Stephen J. and {Smith}, Graham P. and {Snodgrass}, Colin and {Talia}, Margherita and {Tao}, Charling and {Toft}, Sune and {Tortora}, Crescenzo and {Tutusaus}, Isaac and {Usher}, Christopher and {van Velzen}, Sjoert and {Verma}, Aprajita and {Vernardos}, Georgios and {Voggel}, Karina and {Wandelt}, Benjamin and {Watkins}, Aaron E. and {Weller}, Jochen and {Wright}, Angus H. and {Yoachim}, Peter and {Yoon}, Ilsang and {Zucca}, Elena},
@@ -1433,6 +2248,7 @@ Universe, and cosmology.}},
  month = {January},
  pages = {5836022},
  primaryclass = {astro-ph.IM},
+ publisher = {Zenodo},
  title = {{Rubin-Euclid Derived Data Products: Initial Recommendations}},
  volume = {58},
  year = {2022}
@@ -1462,7 +2278,6 @@ cosmoDC2, the extragalactic catalog recently released for the
 LSST DESC second Data Challenge.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2022OJAp....5E...1K},
- altmetric = {114917709},
  archiveprefix = {arXiv},
  arxiv = {2110.03769},
  author = {{Kovacs}, Eve and {Mao}, Yao-Yuan and {Aguena}, Michel and {Bahmanyar}, Anita and {Broussard}, Adam and {Butler}, James and {Campbell}, Duncan and {Chang}, Chihway and {Fu}, Shenming and {Heitmann}, Katrin and {Korytov}, Danila and {Lanusse}, Fran{\c{c}}ois and {Larsen}, Patricia and {Mandelbaum}, Rachel and {Morrison}, Christopher B. and {Payerne}, Constantin and {Ricci}, Marina and {Rykoff}, Eli and {S{\'a}nchez}, F. Javier and {Sevilla-Noarbe}, Ignacio and {Simet}, Melanie and {To}, Chun-Hao and {Vikraman}, Vinu and {Zhou}, Rongpu and {Avestruz}, Camille and {Benoist}, Christophe and {Benson}, Andrew J. and {Bleem}, Lindsey and {{\'C}iprianovi{\'c}}, Aleksandra and {Combet}, C{\'e}line and {Gawiser}, Eric and {He}, Shiyuan and {Joseph}, Remy and {Newman}, Jeffrey A. and {Prat}, Judit and {Schmidt}, Samuel and {Slosar}, An{\v{z}}e and {Zuntz}, Joe and {LSST Dark Energy Science Collaboration}},
@@ -1495,23 +2310,21 @@ parameters are recovered to an accuracy similar to that for pure
 analytic S{\'e}rsic profiles. Based on these simulations, we
 estimate that the Euclid Wide Survey (EWS) will be able to
 resolve the internal morphological structure of galaxies down to
-a surface brightness of 22.5 mag arcsec$^{{\ensuremath{-}}2}$,
-and the Euclid Deep Survey (EDS) down to 24.9 mag
-arcsec$^{{\ensuremath{-}}2}$. This corresponds to approximately
-250 million galaxies at the end of the mission and a 50\%
-complete sample for stellar masses above 10$^{10.6}$
-M$_{{\ensuremath{\odot}}}$ (resp. 10$^{9.6}$
-M$_{{\ensuremath{\odot}}}$) at a redshift z {\ensuremath{\sim}}
-0.5 for the EWS (resp. EDS). The approach presented in this work
-can contribute to improving the preparation of future high-
-precision cosmological imaging surveys by allowing simulations
-to incorporate more realistic galaxies.}},
+a surface brightness of 22.5 mag arcsec$^{‒2}$, and the Euclid
+Deep Survey (EDS) down to 24.9 mag arcsec$^{‒2}$. This
+corresponds to approximately 250 million galaxies at the end of
+the mission and a 50\% complete sample for stellar masses above
+10$^{10.6}$ M$_{☉}$ (resp. 10$^{9.6}$ M$_{☉}$) at a redshift z
+{\ensuremath{\sim}} 0.5 for the EWS (resp. EDS). The approach
+presented in this work can contribute to improving the
+preparation of future high-precision cosmological imaging
+surveys by allowing simulations to incorporate more realistic
+galaxies.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2022A&A...657A..90E},
- altmetric = {106473429},
  archiveprefix = {arXiv},
  arxiv = {2105.12149},
- author = {{Euclid Collaboration} and {Bretonni{\`e}re}, H. and {Huertas-Company}, M. and {Boucaud}, A. and {Lanusse}, F. and {Jullo}, E. and {Merlin}, E. and {Tuccillo}, D. and {Castellano}, M. and {Brinchmann}, J. and {Conselice}, C.~J. and {Dole}, H. and {Cabanac}, R. and {Courtois}, H.~M. and {Castander}, F.~J. and {Duc}, P.~A. and {Fosalba}, P. and {Guinet}, D. and {Kruk}, S. and {Kuchner}, U. and {Serrano}, S. and {Soubrie}, E. and {Tramacere}, A. and {Wang}, L. and {Amara}, A. and {Auricchio}, N. and {Bender}, R. and {Bodendorf}, C. and {Bonino}, D. and {Branchini}, E. and {Brau-Nogue}, S. and {Brescia}, M. and {Capobianco}, V. and {Carbone}, C. and {Carretero}, J. and {Cavuoti}, S. and {Cimatti}, A. and {Cledassou}, R. and {Congedo}, G. and {Conversi}, L. and {Copin}, Y. and {Corcione}, L. and {Costille}, A. and {Cropper}, M. and {Da Silva}, A. and {Degaudenzi}, H. and {Douspis}, M. and {Dubath}, F. and {Duncan}, C.~A.~J. and {Dupac}, X. and {Dusini}, S. and {Farrens}, S. and {Ferriol}, S. and {Frailis}, M. and {Franceschi}, E. and {Fumana}, M. and {Garilli}, B. and {Gillard}, W. and {Gillis}, B. and {Giocoli}, C. and {Grazian}, A. and {Grupp}, F. and {Haugan}, S.~V.~H. and {Holmes}, W. and {Hormuth}, F. and {Hudelot}, P. and {Jahnke}, K. and {Kermiche}, S. and {Kiessling}, A. and {Kilbinger}, M. and {Kitching}, T. and {Kohley}, R. and {K{\"u}mmel}, M. and {Kunz}, M. and {Kurki-Suonio}, H. and {Ligori}, S. and {Lilje}, P.~B. and {Lloro}, I. and {Maiorano}, E. and {Mansutti}, O. and {Marggraf}, O. and {Markovic}, K. and {Marulli}, F. and {Massey}, R. and {Maurogordato}, S. and {Melchior}, M. and {Meneghetti}, M. and {Meylan}, G. and {Moresco}, M. and {Morin}, B. and {Moscardini}, L. and {Munari}, E. and {Nakajima}, R. and {Niemi}, S.~M. and {Padilla}, C. and {Paltani}, S. and {Pasian}, F. and {Pedersen}, K. and {Pettorino}, V. and {Pires}, S. and {Poncet}, M. and {Popa}, L. and {Pozzetti}, L. and {Raison}, F. and {Rebolo}, R. and {Rhodes}, J. and {Roncarelli}, M. and {Rossetti}, E. and {Saglia}, R. and {Schneider}, P. and {Secroun}, A. and {Seidel}, G. and {Sirignano}, C. and {Sirri}, G. and {Stanco}, L. and {Starck}, J. -L. and {Tallada-Cresp{\'\i}}, P. and {Taylor}, A.~N. and {Tereno}, I. and {Toledo-Moreo}, R. and {Torradeflot}, F. and {Valentijn}, E.~A. and {Valenziano}, L. and {Wang}, Y. and {Welikala}, N. and {Weller}, J. and {Zamorani}, G. and {Zoubian}, J. and {Baldi}, M. and {Bardelli}, S. and {Camera}, S. and {Farinelli}, R. and {Medinaceli}, E. and {Mei}, S. and {Polenta}, G. and {Romelli}, E. and {Tenti}, M. and {Vassallo}, T. and {Zacchei}, A. and {Zucca}, E. and {Baccigalupi}, C. and {Balaguera-Antol{\'\i}nez}, A. and {Biviano}, A. and {Borgani}, S. and {Bozzo}, E. and {Burigana}, C. and {Cappi}, A. and {Carvalho}, C.~S. and {Casas}, S. and {Castignani}, G. and {Colodro-Conde}, C. and {Coupon}, J. and {de la Torre}, S. and {Fabricius}, M. and {Farina}, M. and {Ferreira}, P.~G. and {Flose-Reimberg}, P. and {Fotopoulou}, S. and {Galeotta}, S. and {Ganga}, K. and {Garcia-Bellido}, J. and {Gaztanaga}, E. and {Gozaliasl}, G. and {Hook}, I.~M. and {Joachimi}, B. and {Kansal}, V. and {Kashlinsky}, A. and {Keihanen}, E. and {Kirkpatrick}, C.~C. and {Lindholm}, V. and {Mainetti}, G. and {Maino}, D. and {Maoli}, R. and {Martinelli}, M. and {Martinet}, N. and {McCracken}, H.~J. and {Metcalf}, R.~B. and {Morgante}, G. and {Morisset}, N. and {Nightingale}, J. and {Nucita}, A. and {Patrizii}, L. and {Potter}, D. and {Renzi}, A. and {Riccio}, G. and {S{\'a}nchez}, A.~G. and {Sapone}, D. and {Schirmer}, M. and {Schultheis}, M. and {Scottez}, V. and {Sefusatti}, E. and {Teyssier}, R. and {Tutusaus}, I. and {Valiviita}, J. and {Viel}, M. and {Whittaker}, L. and {Knapen}, J.~H.},
+ author = {{Euclid Collaboration} and {Bretonni{\`e}re}, H. and {Huertas-Company}, M. and {Boucaud}, A. and {Lanusse}, F. and {Jullo}, E. and {Merlin}, E. and {Tuccillo}, D. and {Castellano}, M. and {Brinchmann}, J. and {Conselice}, C.~J. and {Dole}, H. and {Cabanac}, R. and {Courtois}, H.~M. and {Castander}, F.~J. and {Duc}, P.~A. and {Fosalba}, P. and {Guinet}, D. and {Kruk}, S. and {Kuchner}, U. and {Serrano}, S. and {Soubrie}, E. and {Tramacere}, A. and {Wang}, L. and {Amara}, A. and {Auricchio}, N. and {Bender}, R. and {Bodendorf}, C. and {Bonino}, D. and {Branchini}, E. and {Brau-Nogue}, S. and {Brescia}, M. and {Capobianco}, V. and {Carbone}, C. and {Carretero}, J. and {Cavuoti}, S. and {Cimatti}, A. and {Cledassou}, R. and {Congedo}, G. and {Conversi}, L. and {Copin}, Y. and {Corcione}, L. and {Costille}, A. and {Cropper}, M. and {Da Silva}, A. and {Degaudenzi}, H. and {Douspis}, M. and {Dubath}, F. and {Duncan}, C.~A.~J. and {Dupac}, X. and {Dusini}, S. and {Farrens}, S. and {Ferriol}, S. and {Frailis}, M. and {Franceschi}, E. and {Fumana}, M. and {Garilli}, B. and {Gillard}, W. and {Gillis}, B. and {Giocoli}, C. and {Grazian}, A. and {Grupp}, F. and {Haugan}, S.~V.~H. and {Holmes}, W. and {Hormuth}, F. and {Hudelot}, P. and {Jahnke}, K. and {Kermiche}, S. and {Kiessling}, A. and {Kilbinger}, M. and {Kitching}, T. and {Kohley}, R. and {K{\"u}mmel}, M. and {Kunz}, M. and {Kurki-Suonio}, H. and {Ligori}, S. and {Lilje}, P.~B. and {Lloro}, I. and {Maiorano}, E. and {Mansutti}, O. and {Marggraf}, O. and {Markovic}, K. and {Marulli}, F. and {Massey}, R. and {Maurogordato}, S. and {Melchior}, M. and {Meneghetti}, M. and {Meylan}, G. and {Moresco}, M. and {Morin}, B. and {Moscardini}, L. and {Munari}, E. and {Nakajima}, R. and {Niemi}, S.~M. and {Padilla}, C. and {Paltani}, S. and {Pasian}, F. and {Pedersen}, K. and {Pettorino}, V. and {Pires}, S. and {Poncet}, M. and {Popa}, L. and {Pozzetti}, L. and {Raison}, F. and {Rebolo}, R. and {Rhodes}, J. and {Roncarelli}, M. and {Rossetti}, E. and {Saglia}, R. and {Schneider}, P. and {Secroun}, A. and {Seidel}, G. and {Sirignano}, C. and {Sirri}, G. and {Stanco}, L. and {Starck}, J.-L. and {Tallada-Cresp{\'\i}}, P. and {Taylor}, A.~N. and {Tereno}, I. and {Toledo-Moreo}, R. and {Torradeflot}, F. and {Valentijn}, E.~A. and {Valenziano}, L. and {Wang}, Y. and {Welikala}, N. and {Weller}, J. and {Zamorani}, G. and {Zoubian}, J. and {Baldi}, M. and {Bardelli}, S. and {Camera}, S. and {Farinelli}, R. and {Medinaceli}, E. and {Mei}, S. and {Polenta}, G. and {Romelli}, E. and {Tenti}, M. and {Vassallo}, T. and {Zacchei}, A. and {Zucca}, E. and {Baccigalupi}, C. and {Balaguera-Antol{\'\i}nez}, A. and {Biviano}, A. and {Borgani}, S. and {Bozzo}, E. and {Burigana}, C. and {Cappi}, A. and {Carvalho}, C.~S. and {Casas}, S. and {Castignani}, G. and {Colodro-Conde}, C. and {Coupon}, J. and {de la Torre}, S. and {Fabricius}, M. and {Farina}, M. and {Ferreira}, P.~G. and {Flose-Reimberg}, P. and {Fotopoulou}, S. and {Galeotta}, S. and {Ganga}, K. and {Garcia-Bellido}, J. and {Gaztanaga}, E. and {Gozaliasl}, G. and {Hook}, I.~M. and {Joachimi}, B. and {Kansal}, V. and {Kashlinsky}, A. and {Keihanen}, E. and {Kirkpatrick}, C.~C. and {Lindholm}, V. and {Mainetti}, G. and {Maino}, D. and {Maoli}, R. and {Martinelli}, M. and {Martinet}, N. and {McCracken}, H.~J. and {Metcalf}, R.~B. and {Morgante}, G. and {Morisset}, N. and {Nightingale}, J. and {Nucita}, A. and {Patrizii}, L. and {Potter}, D. and {Renzi}, A. and {Riccio}, G. and {S{\'a}nchez}, A.~G. and {Sapone}, D. and {Schirmer}, M. and {Schultheis}, M. and {Scottez}, V. and {Sefusatti}, E. and {Teyssier}, R. and {Tutusaus}, I. and {Valiviita}, J. and {Viel}, M. and {Whittaker}, L. and {Knapen}, J.~H.},
  bibtex_show = {true},
  doi = {10.1051/0004-6361/202141393},
  eid = {A90},
@@ -1558,7 +2371,6 @@ interactive visualization tool for exploring the clustered data
 is at https://weirdgalaxi.es.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021MNRAS.508.2946S},
- altmetric = {105425760},
  archiveprefix = {arXiv},
  arxiv = {2105.02434},
  author = {{Storey-Fisher}, Kate and {Huertas-Company}, Marc and {Ramachandra}, Nesar and {Lanusse}, Francois and {Leauthaud}, Alexie and {Luo}, Yifei and {Huang}, Song and {Prochaska}, J. Xavier},
@@ -1607,7 +2419,6 @@ figure-of-merit is to be optimized, and which observables
 (clustering, lensing, or both) are included.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021OJAp....4E..13Z},
- altmetric = {112674466},
  archiveprefix = {arXiv},
  arxiv = {2108.13418},
  author = {{Zuntz}, Joe and {Lanusse}, Fran{\c{c}}ois and {Malz}, Alex I. and {Wright}, Angus H. and {Slosar}, An{\v{z}}e and {Abolfathi}, Bela and {Alonso}, David and {Bault}, Abby and {Bom}, Cl{\'e}cio R. and {Brescia}, Massimo and {Broussard}, Adam and {Campagne}, Jean-Eric and {Cavuoti}, Stefano and {Cypriano}, Eduardo S. and {Fraga}, Bernardo M.~O. and {Gawiser}, Eric and {Gonzalez}, Elizabeth J. and {Green}, Dylan and {Hatfield}, Peter and {Iyer}, Kartheik and {Kirkby}, David and {Nicola}, Andrina and {Nourbakhsh}, Erfan and {Park}, Andy and {Teixeira}, Gabriel and {Heitmann}, Katrin and {Kovacs}, Eve and {Mao}, Yao-Yuan and {LSST Dark Energy Science Collaboration}},
@@ -1645,7 +2456,6 @@ examples and the entire code is publicly available at
 https://github.com/modichirag/flowpm}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021A&C....3700505M},
- altmetric = {115148248},
  archiveprefix = {arXiv},
  arxiv = {2010.11847},
  author = {{Modi}, C. and {Lanusse}, F. and {Seljak}, U.},
@@ -1687,7 +2497,6 @@ matter map covers the largest sky fraction of any galaxy weak
 lensing map to date.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021MNRAS.505.4626J},
- altmetric = {106619016},
  archiveprefix = {arXiv},
  arxiv = {2105.13539},
  author = {{Jeffrey}, N. and {Gatti}, M. and {Chang}, C. and {Whiteway}, L. and {Demirbozan}, U. and {Kovacs}, A. and {Pollina}, G. and {Bacon}, D. and {Hamaus}, N. and {Kacprzak}, T. and {Lahav}, O. and {Lanusse}, F. and {Mawdsley}, B. and {Nadathur}, S. and {Starck}, J.~L. and {Vielzeuf}, P. and {Zeurcher}, D. and {Alarcon}, A. and {Amon}, A. and {Bechtol}, K. and {Bernstein}, G.~M. and {Campos}, A. and {Rosell}, A. Carnero and {Kind}, M. Carrasco and {Cawthon}, R. and {Chen}, R. and {Choi}, A. and {Cordero}, J. and {Davis}, C. and {DeRose}, J. and {Doux}, C. and {Drlica-Wagner}, A. and {Eckert}, K. and {Elsner}, F. and {Elvin-Poole}, J. and {Everett}, S. and {Fert{\'e}}, A. and {Giannini}, G. and {Gruen}, D. and {Gruendl}, R.~A. and {Harrison}, I. and {Hartley}, W.~G. and {Herner}, K. and {Huff}, E.~M. and {Huterer}, D. and {Kuropatkin}, N. and {Jarvis}, M. and {Leget}, P.~F. and {MacCrann}, N. and {McCullough}, J. and {Muir}, J. and {Myles}, J. and {Navarro-Alsina}, A. and {Pandey}, S. and {Prat}, J. and {Raveri}, M. and {Rollins}, R.~P. and {Ross}, A.~J. and {Rykoff}, E.~S. and {S{\'a}nchez}, C. and {Secco}, L.~F. and {Sevilla-Noarbe}, I. and {Sheldon}, E. and {Shin}, T. and {Troxel}, M.~A. and {Tutusaus}, I. and {Varga}, T.~N. and {Yanny}, B. and {Yin}, B. and {Zhang}, Y. and {Zuntz}, J. and {Abbott}, T.~M.~C. and {Aguena}, M. and {Allam}, S. and {Andrade-Oliveira}, F. and {Becker}, M.~R. and {Bertin}, E. and {Bhargava}, S. and {Brooks}, D. and {Burke}, D.~L. and {Carretero}, J. and {Castander}, F.~J. and {Conselice}, C. and {Costanzi}, M. and {Crocce}, M. and {da Costa}, L.~N. and {Pereira}, M.~E.~S. and {De Vicente}, J. and {Desai}, S. and {Diehl}, H.~T. and {Dietrich}, J.~P. and {Doel}, P. and {Ferrero}, I. and {Flaugher}, B. and {Fosalba}, P. and {Garc{\'\i}a-Bellido}, J. and {Gaztanaga}, E. and {Gerdes}, D.~W. and {Giannantonio}, T. and {Gschwend}, J. and {Gutierrez}, G. and {Hinton}, S.~R. and {Hollowood}, D.~L. and {Hoyle}, B. and {Jain}, B. and {James}, D.~J. and {Lima}, M. and {Maia}, M.~A.~G. and {March}, M. and {Marshall}, J.~L. and {Melchior}, P. and {Menanteau}, F. and {Miquel}, R. and {Mohr}, J.~J. and {Morgan}, R. and {Ogando}, R.~L.~C. and {Palmese}, A. and {Paz-Chinch{\'o}n}, F. and {Plazas}, A.~A. and {Rodriguez-Monroy}, M. and {Roodman}, A. and {Sanchez}, E. and {Scarpine}, V. and {Serrano}, S. and {Smith}, M. and {Soares-Santos}, M. and {Suchyta}, E. and {Tarle}, G. and {Thomas}, D. and {To}, C. and {Weller}, J. and {DES Collaboration}},
@@ -1779,7 +2588,6 @@ generative models, and a framework for incorporating generative
 models within the GALSIM image simulation software.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.5543L},
- altmetric = {88021341},
  archiveprefix = {arXiv},
  arxiv = {2008.03833},
  author = {{Lanusse}, Fran{\c{c}}ois and {Mandelbaum}, Rachel and {Ravanbakhsh}, Siamak and {Li}, Chun-Liang and {Freeman}, Peter and {P{\'o}czos}, Barnab{\'a}s},
@@ -1828,7 +2636,6 @@ could then be refined into the exact posterior with a downstream
 MCMC sampler with minimal burn-in steps.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021AJ....161..262Z},
- altmetric = {99999857},
  archiveprefix = {arXiv},
  arxiv = {2102.05673},
  author = {{Zhang}, Keming and {Bloom}, Joshua S. and {Gaudi}, B. Scott and {Lanusse}, Fran{\c{c}}ois and {Lam}, Casey and {Lu}, Jessica R.},
@@ -1879,7 +2686,7 @@ constraints by multiple probes, jointly or individually.}},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021AAS...23823004M},
  author = {{Malz}, A.~I. and {Lanusse}, F. and {Graham}, M.~L. and {Crenshaw}, J.~F.},
  bibtex_show = {true},
- booktitle = {American Astronomical Society Meeting Abstracts},
+ booktitle = {American Astronomical Society Meeting Abstracts \#238},
  eid = {230.04},
  month = {June},
  pages = {230.04},
@@ -1919,7 +2726,7 @@ dimensions.}},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021AAS...23810304L},
  author = {{Lanusse}, F. and {Remy}, B. and {Jeffrey}, N. and {Liu}, J. and {Starck}, J.},
  bibtex_show = {true},
- booktitle = {American Astronomical Society Meeting Abstracts},
+ booktitle = {American Astronomical Society Meeting Abstracts \#238},
  eid = {103.04},
  month = {June},
  pages = {103.04},
@@ -1948,10 +2755,9 @@ show that the proposed method exhibits improved estimation
 accuracy compared to customised mass-map reconstruction methods.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021A&A...649A..99S},
- altmetric = {99778292},
  archiveprefix = {arXiv},
  arxiv = {2102.04127},
- author = {{Starck}, J. -L. and {Themelis}, K.~E. and {Jeffrey}, N. and {Peel}, A. and {Lanusse}, F.},
+ author = {{Starck}, J.-L. and {Themelis}, K.~E. and {Jeffrey}, N. and {Peel}, A. and {Lanusse}, F.},
  bibtex_show = {true},
  doi = {10.1051/0004-6361/202039451},
  eid = {A99},
@@ -2073,7 +2879,6 @@ struggles to properly capture the inner, dense regions of
 quenched spheroidal galaxies.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021MNRAS.501.4359Z},
- altmetric = {85073587},
  archiveprefix = {arXiv},
  arxiv = {2007.00039},
  author = {{Zanisi}, Lorenzo and {Huertas-Company}, Marc and {Lanusse}, Fran{\c{c}}ois and {Bottrell}, Connor and {Pillepich}, Annalisa and {Nelson}, Dylan and {Rodriguez-Gomez}, Vicente and {Shankar}, Francesco and {Hernquist}, Lars and {Dekel}, Avishai and {Margalef-Bentabol}, Berta and {Vogelsberger}, Mark and {Primack}, Joel},
@@ -2121,7 +2926,6 @@ effects. Finally, the DC2 sky survey enables the exploration of
 new scientific ideas in both static and time domain cosmology.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021ApJS..253...31L},
- altmetric = {92331243},
  archiveprefix = {arXiv},
  arxiv = {2010.05926},
  author = {{LSST Dark Energy Science Collaboration (LSST DESC)} and {Abolfathi}, Bela and {Alonso}, David and {Armstrong}, Robert and {Aubourg}, {\'E}ric and {Awan}, Humna and {Babuji}, Yadu N. and {Bauer}, Franz Erik and {Bean}, Rachel and {Beckett}, George and {Biswas}, Rahul and {Bogart}, Joanne R. and {Boutigny}, Dominique and {Chard}, Kyle and {Chiang}, James and {Claver}, Chuck F. and {Cohen-Tanugi}, Johann and {Combet}, C{\'e}line and {Connolly}, Andrew J. and {Daniel}, Scott F. and {Digel}, Seth W. and {Drlica-Wagner}, Alex and {Dubois}, Richard and {Gangler}, Emmanuel and {Gawiser}, Eric and {Glanzman}, Thomas and {Gris}, Phillipe and {Habib}, Salman and {Hearin}, Andrew P. and {Heitmann}, Katrin and {Hernandez}, Fabio and {Hlo{\v{z}}ek}, Ren{\'e}e and {Hollowed}, Joseph and {Ishak}, Mustapha and {Ivezi{\'c}}, {\v{Z}}eljko and {Jarvis}, Mike and {Jha}, Saurabh W. and {Kahn}, Steven M. and {Kalmbach}, J. Bryce and {Kelly}, Heather M. and {Kovacs}, Eve and {Korytov}, Danila and {Krughoff}, K. Simon and {Lage}, Craig S. and {Lanusse}, Fran{\c{c}}ois and {Larsen}, Patricia and {Le Guillou}, Laurent and {Li}, Nan and {Longley}, Emily Phillips and {Lupton}, Robert H. and {Mandelbaum}, Rachel and {Mao}, Yao-Yuan and {Marshall}, Phil and {Meyers}, Joshua E. and {Moniez}, Marc and {Morrison}, Christopher B. and {Nomerotski}, Andrei and {O'Connor}, Paul and {Park}, HyeYun and {Park}, Ji Won and {Peloton}, Julien and {Perrefort}, Daniel and {Perry}, James and {Plaszczynski}, St{\'e}phane and {Pope}, Adrian and {Rasmussen}, Andrew and {Reil}, Kevin and {Roodman}, Aaron J. and {Rykoff}, Eli S. and {S{\'a}nchez}, F. Javier and {Schmidt}, Samuel J. and {Scolnic}, Daniel and {Stubbs}, Christopher W. and {Tyson}, J. Anthony and {Uram}, Thomas D. and {Villarreal}, Antonia Sierra and {Walter}, Christopher W. and {Wiesner}, Matthew P. and {Wood-Vasey}, W. Michael and {Zuntz}, Joe},
@@ -2165,7 +2969,6 @@ Euclid, and LSST). We have made our simulated lensing maps
 publicly available.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021MNRAS.501..954J},
- altmetric = {90800745},
  archiveprefix = {arXiv},
  arxiv = {2009.08459},
  author = {{Jeffrey}, Niall and {Alsing}, Justin and {Lanusse}, Fran{\c{c}}ois},
@@ -2211,7 +3014,7 @@ release via a GitHub repository.}},
  eid = {arXiv:2101.04855},
  eprint = {2101.04855},
  journal = {arXiv e-prints},
- keywords = {Astrophysics - Cosmology and Nongalactic Astrophysics, Astrophysics - Instrumentation and Methods for Astrophysics},
+ keywords = {Cosmology and Nongalactic Astrophysics, Instrumentation and Methods for Astrophysics},
  month = {January},
  pages = {arXiv:2101.04855},
  primaryclass = {astro-ph.CO},
@@ -2239,7 +3042,7 @@ framework can further be applied to produce the exact posterior.}},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2021AAS...23721808Z},
  author = {{Zhang}, K. and {Bloom}, J. and {Gaudi}, B. and {Lanusse}, F. and {Lam}, C. and {Lu}, J.},
  bibtex_show = {true},
- booktitle = {American Astronomical Society Meeting Abstracts},
+ booktitle = {American Astronomical Society Meeting Abstracts \#237},
  eid = {218.08},
  month = {January},
  pages = {218.08},
@@ -2499,7 +3302,6 @@ learning will be a leading approach for mass mapping with Euclid
 and LSST.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5023J},
- altmetric = {64555105},
  archiveprefix = {arXiv},
  arxiv = {1908.00543},
  author = {{Jeffrey}, Niall and {Lanusse}, Fran{\c{c}}ois and {Lahav}, Ofer and {Starck}, Jean-Luc},
@@ -2573,7 +3375,6 @@ including an efficient reader that facilitates interaction with
 the data.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2019ApJS..245...26K},
- altmetric = {63598525},
  archiveprefix = {arXiv},
  arxiv = {1907.06530},
  author = {{Korytov}, Danila and {Hearin}, Andrew and {Kovacs}, Eve and {Larsen}, Patricia and {Rangel}, Esteban and {Hollowed}, Joseph and {Benson}, Andrew J. and {Heitmann}, Katrin and {Mao}, Yao-Yuan and {Bahmanyar}, Anita and {Chang}, Chihway and {Campbell}, Duncan and {DeRose}, Joseph and {Finkel}, Hal and {Frontiere}, Nicholas and {Gawiser}, Eric and {Habib}, Salman and {Joachimi}, Benjamin and {Lanusse}, Fran{\c{c}}ois and {Li}, Nan and {Mandelbaum}, Rachel and {Morrison}, Christopher and {Newman}, Jeffrey A. and {Pope}, Adrian and {Rykoff}, Eli and {Simet}, Melanie and {To}, Chun-Hao and {Vikraman}, Vinu and {Wechsler}, Risa H. and {White}, Martin and {(The LSST Dark Energy Science Collaboration}},
@@ -2675,7 +3476,6 @@ available at <A href=``https://github.com/LSSTDESC/CCL''>https:/
 /github.com/LSSTDESC/CCL</A>.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2019ApJS..242....2C},
- altmetric = {52749948},
  archiveprefix = {arXiv},
  arxiv = {1812.05995},
  author = {{Chisari}, Nora Elisa and {Alonso}, David and {Krause}, Elisabeth and {Leonard}, C. Danielle and {Bull}, Philip and {Neveu}, J{\'e}r{\'e}my and {Villarreal}, Antonia Sierra and {Singh}, Sukhdeep and {McClintock}, Thomas and {Ellison}, John and {Du}, Zilong and {Zuntz}, Joe and {Mead}, Alexander and {Joudaki}, Shahab and {Lorenz}, Christiane S. and {Tr{\"o}ster}, Tilman and {Sanchez}, Javier and {Lanusse}, Francois and {Ishak}, Mustapha and {Hlozek}, Ren{\'e}e and {Blazek}, Jonathan and {Campagne}, Jean-Eric and {Almoubayyed}, Husni and {Eifler}, Tim and {Kirby}, Matthew and {Kirkby}, David and {Plaszczynski}, St{\'e}phane and {Slosar}, An{\v{z}}e and {Vrastil}, Michal and {Wagoner}, Erika L. and {LSST Dark Energy Science Collaboration}},
@@ -2731,10 +3531,9 @@ depends on the realism of the simulated data on which the
 finders are trained.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2019A&A...625A.119M},
- altmetric = {33145750},
  archiveprefix = {arXiv},
  arxiv = {1802.03609},
- author = {{Metcalf}, R.~B. and {Meneghetti}, M. and {Avestruz}, C. and {Bellagamba}, F. and {Bom}, C.~R. and {Bertin}, E. and {Cabanac}, R. and {Courbin}, F. and {Davies}, A. and {Decenci{\`e}re}, E. and {Flamary}, R. and {Gavazzi}, R. and {Geiger}, M. and {Hartley}, P. and {Huertas-Company}, M. and {Jackson}, N. and {Jacobs}, C. and {Jullo}, E. and {Kneib}, J. -P. and {Koopmans}, L.~V.~E. and {Lanusse}, F. and {Li}, C. -L. and {Ma}, Q. and {Makler}, M. and {Li}, N. and {Lightman}, M. and {Petrillo}, C.~E. and {Serjeant}, S. and {Sch{\"a}fer}, C. and {Sonnenfeld}, A. and {Tagore}, A. and {Tortora}, C. and {Tuccillo}, D. and {Valent{\'\i}n}, M.~B. and {Velasco-Forero}, S. and {Verdoes Kleijn}, G.~A. and {Vernardos}, G.},
+ author = {{Metcalf}, R.~B. and {Meneghetti}, M. and {Avestruz}, C. and {Bellagamba}, F. and {Bom}, C.~R. and {Bertin}, E. and {Cabanac}, R. and {Courbin}, F. and {Davies}, A. and {Decenci{\`e}re}, E. and {Flamary}, R. and {Gavazzi}, R. and {Geiger}, M. and {Hartley}, P. and {Huertas-Company}, M. and {Jackson}, N. and {Jacobs}, C. and {Jullo}, E. and {Kneib}, J.-P. and {Koopmans}, L.~V.~E. and {Lanusse}, F. and {Li}, C.-L. and {Ma}, Q. and {Makler}, M. and {Li}, N. and {Lightman}, M. and {Petrillo}, C.~E. and {Serjeant}, S. and {Sch{\"a}fer}, C. and {Sonnenfeld}, A. and {Tagore}, A. and {Tortora}, C. and {Tuccillo}, D. and {Valent{\'\i}n}, M.~B. and {Velasco-Forero}, S. and {Verdoes Kleijn}, G.~A. and {Vernardos}, G.},
  bibtex_show = {true},
  doi = {10.1051/0004-6361/201832797},
  eid = {A119},
@@ -2788,7 +3587,6 @@ and will lead to significantly improved cosmological
 constraints.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2019PASJ...71...43H},
- altmetric = {48895380},
  archiveprefix = {arXiv},
  arxiv = {1809.09148},
  author = {{Hikage}, Chiaki and {Oguri}, Masamune and {Hamana}, Takashi and {More}, Surhud and {Mandelbaum}, Rachel and {Takada}, Masahiro and {K{\"o}hlinger}, Fabian and {Miyatake}, Hironao and {Nishizawa}, Atsushi J. and {Aihara}, Hiroaki and {Armstrong}, Robert and {Bosch}, James and {Coupon}, Jean and {Ducout}, Anne and {Ho}, Paul and {Hsieh}, Bau-Ching and {Komiyama}, Yutaka and {Lanusse}, Fran{\c{c}}ois and {Leauthaud}, Alexie and {Lupton}, Robert H. and {Medezinski}, Elinor and {Mineo}, Sogo and {Miyama}, Shoken and {Miyazaki}, Satoshi and {Murata}, Ryoma and {Murayama}, Hitoshi and {Shirasaki}, Masato and {Sif{\'o}n}, Crist{\'o}bal and {Simet}, Melanie and {Speagle}, Joshua and {Spergel}, David N. and {Strauss}, Michael A. and {Sugiyama}, Naoshi and {Tanaka}, Masayuki and {Utsumi}, Yousuke and {Wang}, Shiang-Yu and {Yamada}, Yoshihiko},
@@ -2835,7 +3633,6 @@ that the weak lensing multiplicative biases in the first-year
 HSC shear catalogue are controlled at the 1 per cent level.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2018MNRAS.481.3170M},
- altmetric = {26983148},
  archiveprefix = {arXiv},
  arxiv = {1710.00885},
  author = {{Mandelbaum}, Rachel and {Lanusse}, Fran{\c{c}}ois and {Leauthaud}, Alexie and {Armstrong}, Robert and {Simet}, Melanie and {Miyatake}, Hironao and {Meyers}, Joshua E. and {Bosch}, James and {Murata}, Ryoma and {Miyazaki}, Satoshi and {Tanaka}, Masayuki},
@@ -2850,6 +3647,37 @@ HSC shear catalogue are controlled at the 1 per cent level.}},
  primaryclass = {astro-ph.CO},
  title = {{Weak lensing shear calibration with simulations of the HSC survey}},
  volume = {481},
+ year = {2018}
+}
+
+@inproceedings{2018eusi.conf..413T,
+ abstract = {{In this paper we present a novel method for dark matter mass mapping
+reconstruction from weak gravitational lensing measurements. The
+crux of the proposed method lies in a new modelling of the
+matter density field in the Universe as a mixture of two
+components: a) a sparsity-based component that captures the non-
+Gaussian structure of the field, such as peaks or halos at
+different spatial scales; and b) a Gaussian random field, which
+is known to well represent the linear component of the field.
+This new model represents the distribution of matter in the
+universe much better than previously proposed models. We have
+developed a new algorithm that also takes into account the
+experimental problems we meet in practice, such as a non-
+diagonal covariance matrix of the noise or missing data.
+Experimental results on simulated data show that the proposed
+method exhibits improved estimation accuracy compared to state-
+of-the-art methods.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2018eusi.conf..413T},
+ author = {{Themelis}, Konstantinos E. and {Lanusse}, Francois and {Jeffrey}, Niall and {Peel}, Austin and {Starck}, Jean-Luc and {Abdalla}, Filipe B.},
+ bibtex_show = {true},
+ booktitle = {2018 26th European Signal Processing Conference (EUSIPCO)},
+ doi = {10.23919/EUSIPCO.2018.8553224},
+ eid = {413},
+ keywords = {Convergence, Signal processing algorithms, Covariance matrices, Shape, Optimization, Noise measurement, Data models},
+ month = {September},
+ pages = {413},
+ title = {{Modelling Data with both Sparsity and a Gaussian Random Field: Application to Dark Matter Mass Mapping in Cosmology}},
  year = {2018}
 }
 
@@ -2886,10 +3714,9 @@ from data and foreground redMaPPer clusters is increased 18 per
 cent by the Wiener filter and 32 per cent by GLIMPSE.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2018MNRAS.479.2871J},
- altmetric = {32402670},
  archiveprefix = {arXiv},
  arxiv = {1801.08945},
- author = {{Jeffrey}, N. and {Abdalla}, F.~B. and {Lahav}, O. and {Lanusse}, F. and {Starck}, J. -L. and {Leonard}, A. and {Kirk}, D. and {Chang}, C. and {Baxter}, E. and {Kacprzak}, T. and {Seitz}, S. and {Vikram}, V. and {Whiteway}, L. and {Abbott}, T.~M.~C. and {Allam}, S. and {Avila}, S. and {Bertin}, E. and {Brooks}, D. and {Carnero Rosell}, A. and {Carrasco Kind}, M. and {Carretero}, J. and {Castander}, F.~J. and {Crocce}, M. and {Cunha}, C.~E. and {D'Andrea}, C.~B. and {da Costa}, L.~N. and {Davis}, C. and {De Vicente}, J. and {Desai}, S. and {Doel}, P. and {Eifler}, T.~F. and {Evrard}, A.~E. and {Flaugher}, B. and {Fosalba}, P. and {Frieman}, J. and {Garc{\'\i}a-Bellido}, J. and {Gerdes}, D.~W. and {Gruen}, D. and {Gruendl}, R.~A. and {Gschwend}, J. and {Gutierrez}, G. and {Hartley}, W.~G. and {Honscheid}, K. and {Hoyle}, B. and {James}, D.~J. and {Jarvis}, M. and {Kuehn}, K. and {Lima}, M. and {Lin}, H. and {March}, M. and {Melchior}, P. and {Menanteau}, F. and {Miquel}, R. and {Plazas}, A.~A. and {Reil}, K. and {Roodman}, A. and {Sanchez}, E. and {Scarpine}, V. and {Schubnell}, M. and {Sevilla-Noarbe}, I. and {Smith}, M. and {Soares-Santos}, M. and {Sobreira}, F. and {Suchyta}, E. and {Swanson}, M.~E.~C. and {Tarle}, G. and {Thomas}, D. and {Walker}, A.~R. and {DES Collaboration}},
+ author = {{Jeffrey}, N. and {Abdalla}, F.~B. and {Lahav}, O. and {Lanusse}, F. and {Starck}, J.-L. and {Leonard}, A. and {Kirk}, D. and {Chang}, C. and {Baxter}, E. and {Kacprzak}, T. and {Seitz}, S. and {Vikram}, V. and {Whiteway}, L. and {Abbott}, T.~M.~C. and {Allam}, S. and {Avila}, S. and {Bertin}, E. and {Brooks}, D. and {Carnero Rosell}, A. and {Carrasco Kind}, M. and {Carretero}, J. and {Castander}, F.~J. and {Crocce}, M. and {Cunha}, C.~E. and {D'Andrea}, C.~B. and {da Costa}, L.~N. and {Davis}, C. and {De Vicente}, J. and {Desai}, S. and {Doel}, P. and {Eifler}, T.~F. and {Evrard}, A.~E. and {Flaugher}, B. and {Fosalba}, P. and {Frieman}, J. and {Garc{\'\i}a-Bellido}, J. and {Gerdes}, D.~W. and {Gruen}, D. and {Gruendl}, R.~A. and {Gschwend}, J. and {Gutierrez}, G. and {Hartley}, W.~G. and {Honscheid}, K. and {Hoyle}, B. and {James}, D.~J. and {Jarvis}, M. and {Kuehn}, K. and {Lima}, M. and {Lin}, H. and {March}, M. and {Melchior}, P. and {Menanteau}, F. and {Miquel}, R. and {Plazas}, A.~A. and {Reil}, K. and {Roodman}, A. and {Sanchez}, E. and {Scarpine}, V. and {Schubnell}, M. and {Sevilla-Noarbe}, I. and {Smith}, M. and {Soares-Santos}, M. and {Sobreira}, F. and {Suchyta}, E. and {Swanson}, M.~E.~C. and {Tarle}, G. and {Thomas}, D. and {Walker}, A.~R. and {DES Collaboration}},
  bibtex_show = {true},
  doi = {10.1093/mnras/sty1252},
  eprint = {1801.08945},
@@ -2945,7 +3772,6 @@ number of galaxies detected by JWST (at small scales and even
 fainter magnitudes) observing these fields.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2018MNRAS.474.5393B},
- altmetric = {21771781},
  archiveprefix = {arXiv},
  arxiv = {1707.02312},
  author = {{Bhowmick}, Aklant K. and {Di Matteo}, Tiziana and {Feng}, Yu and {Lanusse}, Francois},
@@ -2994,7 +3820,6 @@ and how these metrics impose requirements on the synthetic sky
 catalogs.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2018ApJS..234...36M},
- altmetric = {26722805},
  archiveprefix = {arXiv},
  arxiv = {1709.09665},
  author = {{Mao}, Yao-Yuan and {Kovacs}, Eve and {Heitmann}, Katrin and {Uram}, Thomas D. and {Benson}, Andrew J. and {Campbell}, Duncan and {Cora}, Sof{\'\i}a A. and {DeRose}, Joseph and {Di Matteo}, Tiziana and {Habib}, Salman and {Hearin}, Andrew P. and {Bryce Kalmbach}, J. and {Krughoff}, K. Simon and {Lanusse}, Fran{\c{c}}ois and {Luki{\'c}}, Zarija and {Mandelbaum}, Rachel and {Newman}, Jeffrey A. and {Padilla}, Nelson and {Paillas}, Enrique and {Pope}, Adrian and {Ricker}, Paul M. and {Ruiz}, Andr{\'e}s N. and {Tenneti}, Ananth and {Vega-Mart{\'\i}nez}, Cristian A. and {Wechsler}, Risa H. and {Zhou}, Rongpu and {Zu}, Ying and {LSST Dark Energy Science Collaboration}},
@@ -3044,7 +3869,6 @@ dominant systematics and the planned algorithmic changes to
 reduce them in future data reductions.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2018PASJ...70S..25M},
- altmetric = {20371193},
  archiveprefix = {arXiv},
  arxiv = {1705.06745},
  author = {{Mandelbaum}, Rachel and {Miyatake}, Hironao and {Hamana}, Takashi and {Oguri}, Masamune and {Simet}, Melanie and {Armstrong}, Robert and {Bosch}, James and {Murata}, Ryoma and {Lanusse}, Fran{\c{c}}ois and {Leauthaud}, Alexie and {Coupon}, Jean and {More}, Surhud and {Takada}, Masahiro and {Miyazaki}, Satoshi and {Speagle}, Joshua S. and {Shirasaki}, Masato and {Sif{\'o}n}, Crist{\'o}bal and {Huang}, Song and {Nishizawa}, Atsushi J. and {Medezinski}, Elinor and {Okura}, Yuki and {Okabe}, Nobuhiro and {Czakon}, Nicole and {Takahashi}, Ryuichi and {Coulton}, William R. and {Hikage}, Chiaki and {Komiyama}, Yutaka and {Lupton}, Robert H. and {Strauss}, Michael A. and {Tanaka}, Masayuki and {Utsumi}, Yousuke},
@@ -3093,7 +3917,6 @@ publicly available at
 https://github.com/McWilliamsCenter/CMUDeepLens.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2018MNRAS.473.3895L},
- altmetric = {17152029},
  archiveprefix = {arXiv},
  arxiv = {1703.02642},
  author = {{Lanusse}, Fran{\c{c}}ois and {Ma}, Quanbin and {Li}, Nan and {Collett}, Thomas E. and {Li}, Chun-Liang and {Ravanbakhsh}, Siamak and {Mandelbaum}, Rachel and {P{\'o}czos}, Barnab{\'a}s},
@@ -3142,7 +3965,6 @@ not consider A520 as posing a significant challenge to the
 collisionless dark matter scenario.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2017ApJ...847...23P},
- altmetric = {23356438},
  archiveprefix = {arXiv},
  arxiv = {1708.00269},
  author = {{Peel}, Austin and {Lanusse}, Fran{\c{c}}ois and {Starck}, Jean-Luc},
@@ -3222,7 +4044,6 @@ directions with the other two varied parameters are still clear
 for both peaks and {\ensuremath{\xi}}$_{{\ensuremath{\pm}}}$.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2017A&A...599A..79P},
- altmetric = {14550861},
  archiveprefix = {arXiv},
  arxiv = {1612.02264},
  author = {{Peel}, Austin and {Lin}, Chieh-An and {Lanusse}, Fran{\c{c}}ois and {Leonard}, Adrienne and {Starck}, Jean-Luc and {Kilbinger}, Martin},
@@ -3416,10 +4237,9 @@ ostat.org/software/glimpse''>http://www.cosmostat.org/software/g
 limpse</A>}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2016A&A...591A...2L},
- altmetric = {6129665},
  archiveprefix = {arXiv},
  arxiv = {1603.01599},
- author = {{Lanusse}, F. and {Starck}, J. -L. and {Leonard}, A. and {Pires}, S.},
+ author = {{Lanusse}, F. and {Starck}, J.-L. and {Leonard}, A. and {Pires}, S.},
  bibtex_show = {true},
  doi = {10.1051/0004-6361/201628278},
  eid = {A2},
@@ -3489,10 +4309,9 @@ electronic form at <A href=``http://www.aanda.org/10.1051/0004-6
 361/201424456/olm''>http://www.aanda.org</A>}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2015A&A...578A..10L},
- altmetric = {2459415},
  archiveprefix = {arXiv},
  arxiv = {1406.5989},
- author = {{Lanusse}, F. and {Rassat}, A. and {Starck}, J. -L.},
+ author = {{Lanusse}, F. and {Rassat}, A. and {Starck}, J.-L.},
  bibtex_show = {true},
  doi = {10.1051/0004-6361/201424456},
  eid = {A10},
@@ -3536,7 +4355,6 @@ since 3D reconstructions yield unbiased estimators of both the
 mass and redshift of the detected clusters directly.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2015MNRAS.449.1146L},
- altmetric = {3720548},
  archiveprefix = {arXiv},
  arxiv = {1502.05872},
  author = {{Leonard}, Adrienne and {Lanusse}, Fran{\c{c}}ois and {Starck}, Jean-Luc},
@@ -3590,10 +4408,9 @@ that of the original method for bright events, while the
 coordinate resolution is improved.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2015JCAP...04..041M},
- altmetric = {3056762},
  archiveprefix = {arXiv},
  arxiv = {1501.02110},
- author = {{M{\"o}ller}, A. and {Ruhlmann-Kleider}, V. and {Lanusse}, F. and {Neveu}, J. and {Palanque-Delabrouille}, N. and {Starck}, J. -L.},
+ author = {{M{\"o}ller}, A. and {Ruhlmann-Kleider}, V. and {Lanusse}, F. and {Neveu}, J. and {Palanque-Delabrouille}, N. and {Starck}, J.-L.},
  bibtex_show = {true},
  doi = {10.1088/1475-7516/2015/04/041},
  eprint = {1501.02110},
@@ -3640,10 +4457,9 @@ invariant primordial power spectrum with A$_{s}$ = 2.215
 {\texttimes} 10$^{-9}$ and n$_{s}$ = 0.9624.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2014A&A...571L...1L},
- altmetric = {2756655},
  archiveprefix = {arXiv},
  arxiv = {1410.2571},
- author = {{Lanusse}, F. and {Paykari}, P. and {Starck}, J. -L. and {Sureau}, F. and {Bobin}, J. and {Rassat}, A.},
+ author = {{Lanusse}, F. and {Paykari}, P. and {Starck}, J.-L. and {Sureau}, F. and {Bobin}, J. and {Rassat}, A.},
  bibtex_show = {true},
  doi = {10.1051/0004-6361/201424420},
  eid = {L1},
@@ -3704,10 +4520,9 @@ deviations or small global deviations from a pure scale-
 invariant spectrum can easily be detected.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2014A&A...566A..77P},
- altmetric = {2111954},
  archiveprefix = {arXiv},
  arxiv = {1402.1983},
- author = {{Paykari}, P. and {Lanusse}, F. and {Starck}, J. -L. and {Sureau}, F. and {Bobin}, J.},
+ author = {{Paykari}, P. and {Lanusse}, F. and {Starck}, J.-L. and {Sureau}, F. and {Bobin}, J.},
  bibtex_show = {true},
  doi = {10.1051/0004-6361/201322326},
  eid = {A77},
@@ -3762,7 +4577,6 @@ amplitude of the peaks detected, and a bias in the detected
 redshift.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2014MNRAS.440.1281L},
- altmetric = {1673889},
  archiveprefix = {arXiv},
  arxiv = {1308.1353},
  author = {{Leonard}, Adrienne and {Lanusse}, Fran{\c{c}}ois and {Starck}, Jean-Luc},
@@ -3860,10 +4674,9 @@ as well as the Planck PR1 data. We find no significant
 departures from a near scale-invariant spectrum.}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2014IAUS..306...60P},
- altmetric = {2477847},
  archiveprefix = {arXiv},
  arxiv = {1406.7725},
- author = {{Paykari}, P. and {Lanusse}, F. and {Starck}, J. -L. and {Sureau}, F. and {Bobin}, J.},
+ author = {{Paykari}, P. and {Lanusse}, F. and {Starck}, J.-L. and {Sureau}, F. and {Bobin}, J.},
  bibtex_show = {true},
  booktitle = {Statistical Challenges in 21st Century Cosmology},
  doi = {10.1017/S1743921314010837},
@@ -3876,6 +4689,29 @@ departures from a near scale-invariant spectrum.}},
  series = {IAU Symposium},
  title = {{PRISM: Sparse recovery of the primordial spectrum from WMAP9 and Planck datasets}},
  volume = {306},
+ year = {2014}
+}
+
+@inproceedings{2014AdIEP.183...99L,
+ abstract = {{In this chapter, we review a variety of 3-D sparse representations
+developed in recent years and adapted to different kinds of 3-D
+signals. In particular, we describe 3-D wavelets, ridgelets,
+beamlets, and curvelets. We also present very recent 3-D sparse
+representations on the 3-D ball that has been adapted to 3-D
+signals naturally observed in spherical coordinates.
+Illustrative examples are provided for the different transforms.}},
+ adsnote = {Provided by the SAO/NASA Astrophysics Data System},
+ adsurl = {https://ui.adsabs.harvard.edu/abs/2014AdIEP.183...99L},
+ author = {{Lanusse}, Francois and {Starck}, Jean-Luc and {Woiselle}, Arnaud and {Fadili}, M. Jalal},
+ bibtex_show = {true},
+ booktitle = {Advances in Imaging and Electron Physics},
+ doi = {10.1016/B978-0-12-800265-0.00003-5},
+ keywords = {Sparse representation, 3-D transforms, Ridgelet, curvelet, 3-D spherical data, morphological diversity},
+ month = {January},
+ pages = {99-204},
+ series = {Advances in Imaging and Electron Physics},
+ title = {{3-D Sparse Representations}},
+ volume = {183},
  year = {2014}
 }
 
@@ -3969,10 +4805,9 @@ available for download as a public code called MRS3D at
 http://jstarck.free.fr/mrs3d.html}},
  adsnote = {Provided by the SAO/NASA Astrophysics Data System},
  adsurl = {https://ui.adsabs.harvard.edu/abs/2012A&A...540A..92L},
- altmetric = {171682516},
  archiveprefix = {arXiv},
  arxiv = {1112.0561},
- author = {{Lanusse}, F. and {Rassat}, A. and {Starck}, J. -L.},
+ author = {{Lanusse}, F. and {Rassat}, A. and {Starck}, J.-L.},
  bibtex_show = {true},
  doi = {10.1051/0004-6361/201118568},
  eid = {A92},
