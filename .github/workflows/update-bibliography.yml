@@ -1,0 +1,49 @@
+name: Update bibliography
+
+on:
+  schedule:
+    - cron: '0 9 1 * *' # 1st of every month at 9am UTC
+  workflow_dispatch: # manual trigger
+
+jobs:
+  update-bib:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests bibtexparser beautifulsoup4 pyyaml
+
+      - name: Run bibgen
+        env:
+          ADS_API_KEY: ${{ secrets.ADS_API_KEY }}
+        run: python scripts/bibgen.py
+
+      - name: Update publications year list
+        run: |
+          CURRENT_YEAR=$(date +%Y)
+          NEXT_YEAR=$((CURRENT_YEAR + 1))
+          # Add next year and current year if not already present
+          for YEAR in $NEXT_YEAR $CURRENT_YEAR; do
+            if ! grep -q "$YEAR" _pages/publications.md; then
+              sed -i "s/^years: \[/years: [$YEAR, /" _pages/publications.md
+            fi
+          done
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _bibliography/papers.bib _pages/publications.md
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "Update bibliography from ADS"
+            git push
+          fi
