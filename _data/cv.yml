@@ -80,6 +80,10 @@
 - title: Selected Workshops and Meetings Organization
   type: time_table
   contents:
+    - year: 2023
+      items:
+        - <a href="https://ml4astro.github.io/icml2023">Machine Learning for Astrophysics Workshop</a> at ICML 2023 (Co-Chair)
+
     - year: 2022
       items:
         - <a href="https://ml4astro.github.io/icml2022">Machine Learning for Astrophysics Workshop</a> at ICML 2022 (Co-Chair)
