@@ -1,16 +1,37 @@
 "2025arXiv251017960P":
   selected: "true"
+  abbr: "NeurIPS"
+
+"2025arXiv250702608R":
+  abbr: "NeurIPS"
+
+"2025arXiv251119390M":
+  abbr: "NeurIPS"
 
 "2024MNRAS.531.4990P":
   selected: "true"
 
 "2024arXiv240513712R":
   selected: "true"
+  abbr: "NeurIPS"
+
+"2023arXiv231002994M":
+  abbr: "NeurIPS"
 
 "2024arXiv241202527T":
   selected: "true"
+  abbr: "NeurIPS"
   preview: "https://raw.githubusercontent.com/MultimodalUniverse/MultimodalUniverse/refs/heads/main/assets/multimodal_universe.png"
   blog: "https://www.simonsfoundation.org/2024/12/02/new-datasets-will-train-ai-models-to-think-like-scientists/"
+
+"2021arXiv210709145H":
+  abbr: "NeurIPS"
+
+"2016arXiv160905796R":
+  abbr: "AAAI"
+
+"2023arXiv231211707J":
+  abbr: "AAAI"
 
 "2023arXiv230704967D":
   preview: "/assets/img/publication_preview/SSL.png"
